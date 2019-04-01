@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on at719</title>
+    <title>Categories on 自在生活</title>
     <link>https://www.at719.com/categories/</link>
-    <description>Recent content in Categories on at719</description>
+    <description>Recent content in Categories on 自在生活</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://www.at719.com&#34;&gt;at719&lt;/a&gt; 2018</copyright>
@@ -14,7 +14,7 @@
     <item>
       <title>Development</title>
       <link>https://www.at719.com/categories/development/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 19 Nov 2018 14:46:18 +0000</pubDate>
       
       <guid>https://www.at719.com/categories/development/</guid>
       <description></description>
@@ -23,7 +23,7 @@
     <item>
       <title>Golang</title>
       <link>https://www.at719.com/categories/golang/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 19 Nov 2018 14:46:18 +0000</pubDate>
       
       <guid>https://www.at719.com/categories/golang/</guid>
       <description></description>

@@ -9,7 +9,7 @@
   
   <url>
     <loc>https://www.at719.com/posts/first/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <lastmod>2018-11-19T14:46:18+00:00</lastmod>
   </url>
   
   <url>
@@ -18,32 +18,20 @@
   </url>
   
   <url>
-    <loc>https://www.at719.com/tags/development/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://www.at719.com/categories/development/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.at719.com/tags/go/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.at719.com/tags/golang/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <lastmod>2018-11-19T14:46:18+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.at719.com/categories/golang/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <lastmod>2018-11-19T14:46:18+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.at719.com/tags/nginx/</loc>
+    <lastmod>2018-11-19T14:46:18+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -55,19 +43,13 @@
   
   <url>
     <loc>https://www.at719.com/tags/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <lastmod>2018-11-19T14:46:18+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.at719.com/tags/templates/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.at719.com/tags/themes/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <loc>https://www.at719.com/tags/web/</loc>
+    <lastmod>2018-11-19T14:46:18+00:00</lastmod>
     <priority>0</priority>
   </url>
   

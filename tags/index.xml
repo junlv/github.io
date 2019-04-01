@@ -1,59 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on at719</title>
+    <title>Tags on 自在生活</title>
     <link>https://www.at719.com/tags/</link>
-    <description>Recent content in Tags on at719</description>
+    <description>Recent content in Tags on 自在生活</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://www.at719.com&#34;&gt;at719&lt;/a&gt; 2018</copyright>
-    <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 19 Nov 2018 14:46:18 +0000</lastBuildDate>
     
 	<atom:link href="https://www.at719.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Development</title>
-      <link>https://www.at719.com/tags/development/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <title>Nginx</title>
+      <link>https://www.at719.com/tags/nginx/</link>
+      <pubDate>Mon, 19 Nov 2018 14:46:18 +0000</pubDate>
       
-      <guid>https://www.at719.com/tags/development/</guid>
+      <guid>https://www.at719.com/tags/nginx/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Go</title>
-      <link>https://www.at719.com/tags/go/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <title>Web</title>
+      <link>https://www.at719.com/tags/web/</link>
+      <pubDate>Mon, 19 Nov 2018 14:46:18 +0000</pubDate>
       
-      <guid>https://www.at719.com/tags/go/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Golang</title>
-      <link>https://www.at719.com/tags/golang/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.at719.com/tags/golang/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Templates</title>
-      <link>https://www.at719.com/tags/templates/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.at719.com/tags/templates/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Themes</title>
-      <link>https://www.at719.com/tags/themes/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.at719.com/tags/themes/</guid>
+      <guid>https://www.at719.com/tags/web/</guid>
       <description></description>
     </item>
     
