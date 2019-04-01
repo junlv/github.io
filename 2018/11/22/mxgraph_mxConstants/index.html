@@ -5,19 +5,20 @@
   
 
   
-  <title>AT719</title>
+  <title>mxgraph源码阅读之mxConstants | AT719</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="最近在看《病隙碎笔》,人,别太高估自己">
-<meta name="keywords" content="写代码">
-<meta property="og:type" content="website">
-<meta property="og:title" content="AT719">
-<meta property="og:url" content="https://at719.com/index.html">
+  <meta name="description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010110210">
+<meta name="keywords" content="mxgraph,graph">
+<meta property="og:type" content="article">
+<meta property="og:title" content="mxgraph源码阅读之mxConstants">
+<meta property="og:url" content="https://at719.com/2018/11/22/mxgraph_mxConstants/index.html">
 <meta property="og:site_name" content="AT719">
-<meta property="og:description" content="最近在看《病隙碎笔》,人,别太高估自己">
+<meta property="og:description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010110210">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-11-22T02:13:37.480Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="AT719">
-<meta name="twitter:description" content="最近在看《病隙碎笔》,人,别太高估自己">
+<meta name="twitter:title" content="mxgraph源码阅读之mxConstants">
+<meta name="twitter:description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010110210">
   
     <link rel="alternate" href="/atom.xml" title="AT719" type="application/atom+xml">
   
@@ -68,171 +69,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-blog_golang_2" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/12/21/blog_golang_2/" class="article-date">
-  <time datetime="2018-12-21T03:25:02.000Z" itemprop="datePublished">2018-12-21</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/12/21/blog_golang_2/">Golang散文集(2) 【映射】</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>映射是一种数据结构，用于存储一系列无序的键值对，映射基于键来存储值。 映射功<br>能强大的地方是，能够基于键快速检索数据 。 键就像索引一样 ，指 向与该键关联的值 。<br>与 C++、 Java 不一样， Go 语言使用映射(map)不需要引入任何库 直接使用就行</p>
-<figure class="highlight golang"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">// 创建</span></span><br><span class="line">map1 : = <span class="built_in">make</span>(<span class="keyword">map</span>[<span class="keyword">string</span>] <span class="keyword">int</span>)</span><br><span class="line">map2 : = <span class="built_in">make</span>(<span class="keyword">map</span>[<span class="keyword">string</span>] <span class="keyword">string</span>) &#123; <span class="string">"key1"</span>:<span class="string">"value1"</span>,<span class="string">"key2"</span>:<span class="string">"value2"</span>, &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 赋值</span></span><br><span class="line">map2[<span class="string">"key3"</span>] = <span class="string">"value3"</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 查找</span></span><br><span class="line">value,exist := map2][<span class="string">"key4"</span>]</span><br><span class="line"><span class="keyword">if</span> exist &#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 迭代</span></span><br><span class="line">map5 := <span class="keyword">map</span>[<span class="keyword">string</span>] <span class="keyword">string</span> &#123;</span><br><span class="line">    <span class="string">"key1"</span>:<span class="string">"value1"</span>,</span><br><span class="line">    <span class="string">"key2"</span>:<span class="string">"value2"</span>,</span><br><span class="line">    <span class="string">"key3"</span>:<span class="string">"value3"</span>,</span><br><span class="line">    <span class="string">"key4"</span>:<span class="string">"value4"</span>,</span><br><span class="line">    <span class="string">"key5"</span>:<span class="string">"value5"</span>,</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span> key,value := <span class="keyword">range</span> map5 &#123;</span><br><span class="line">    fmt.Printf(<span class="string">"key %s value %s "</span>,key,value)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 删除</span></span><br><span class="line"><span class="built_in">delete</span>(<span class="keyword">map</span>, <span class="string">"key值"</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 切片、函数 以及包含切 的结构类型由于具有引用,不能作为映射的键</span></span><br></pre></td></tr></table></figure>
-<p>内置函数 make 可以创建切片和映射，并指定原始的长度和容量 。 也可以直接使用切 片和映射宇面量，或者使用 字面量作为变量的初始值。切片有容量限制，不过可以使用内 置的 append 函数扩展容量。映射的增长没有容量或者任 何 限制 。<br>内置函数 len 可以用来获取切片或者映射的长 度 ，内置函 数 cap 只能用于切片 ，通过 组合，可以创建多维数组和多维切片 ，也可以使用切片或者其他映射作为映射的值，但是 切片不能用作映射的键 。 将切片或者映射传递给函数成本很小，并且不会复制底层的数据 结构。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://at719.com/2018/12/21/blog_golang_2/" data-id="cjpxia89v0001y5t3eiow2hv5" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/golang/">golang</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-blog_golang_1" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/12/21/blog_golang_1/" class="article-date">
-  <time datetime="2018-12-21T03:00:59.000Z" itemprop="datePublished">2018-12-21</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/12/21/blog_golang_1/">Golang散文集</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>写golong学习笔记，供以后翻阅</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://at719.com/2018/12/21/blog_golang_1/" data-id="cjpxia89p0000y5t3dobkphi0" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/golang/">golang</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-blog_vue_1" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/11/26/blog_vue_1/" class="article-date">
-  <time datetime="2018-11-26T09:48:39.000Z" itemprop="datePublished">2018-11-26</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/11/26/blog_vue_1/">根据手势上下方向，显示或隐藏部分内容(vue)</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>2018-11-26 17:45:00</p>
-<p>如图</p>
-<p><img src="https://at719.com/xassets/autoscroll2.gif" alt="显示或隐藏"></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br></pre></td><td class="code"><pre><span class="line">   </span><br><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;div id=<span class="string">"app"</span>&gt;</span><br><span class="line">    &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"menu"</span> v-bind:<span class="class"><span class="keyword">class</span></span>=<span class="string">"&#123;'menu-show': showmenu, 'menu-hide': !showmenu &#125;"</span> &gt;</span><br><span class="line">      &lt;button&gt;button1&lt;<span class="regexp">/button&gt;</span></span><br><span class="line"><span class="regexp">      &lt;button&gt;button2&lt;/</span>button&gt;</span><br><span class="line">      &lt;button&gt;button3&lt;<span class="regexp">/button&gt;</span></span><br><span class="line"><span class="regexp">      &lt;button&gt;button4&lt;/</span>button&gt;</span><br><span class="line">      &lt;button&gt;button5&lt;<span class="regexp">/button&gt;</span></span><br><span class="line"><span class="regexp">      &lt;button&gt;button6&lt;/</span>button&gt;</span><br><span class="line"></span><br><span class="line">    &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">    &lt;div class="container" id="myscroller" ref="myscroller"</span></span><br><span class="line"><span class="regexp">       @touchmove="touchMove($event)"</span></span><br><span class="line"><span class="regexp">     &gt;</span></span><br><span class="line"><span class="regexp">      &lt;div class="item" v-for="(item,index) in 20" v-bind:key="index"&gt;&#123;&#123;item&#125;&#125;&lt;/</span>div&gt;</span><br><span class="line">     </span><br><span class="line">    &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  &lt;/</span>div&gt;</span><br><span class="line">&lt;<span class="regexp">/template&gt;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">&lt;script&gt;</span></span><br><span class="line"><span class="regexp">/</span><span class="regexp">/ import HelloWorld from './</span>components/HelloWorld.vue<span class="string">'</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">export default &#123;</span></span><br><span class="line"><span class="string">  name: '</span>app<span class="string">',</span></span><br><span class="line"><span class="string">  components: &#123;</span></span><br><span class="line"><span class="string">    // HelloWorld</span></span><br><span class="line"><span class="string">    </span></span><br><span class="line"><span class="string">  &#125;,</span></span><br><span class="line"><span class="string">  data () &#123;</span></span><br><span class="line"><span class="string">    return &#123;</span></span><br><span class="line"><span class="string">      showmenu:true</span></span><br><span class="line"><span class="string">    &#125;</span></span><br><span class="line"><span class="string">  &#125;,</span></span><br><span class="line"><span class="string">  methods : &#123;</span></span><br><span class="line"><span class="string">    /* eslint-disable no-console */</span></span><br><span class="line"><span class="string">    touchMove () &#123;</span></span><br><span class="line"><span class="string">      console.log('</span>touchMove<span class="string">')</span></span><br><span class="line"><span class="string">      console.log(this.$refs.myscroller.scrollTop)</span></span><br><span class="line"><span class="string">      let offset = this.$refs.myscroller.scrollTop</span></span><br><span class="line"><span class="string">      if (offset &gt; 250) &#123;</span></span><br><span class="line"><span class="string">        console.log('</span>hidehidehidehide<span class="string">')</span></span><br><span class="line"><span class="string">        this.showmenu = false</span></span><br><span class="line"><span class="string">      &#125; else if(offset &lt; 250 ) &#123;</span></span><br><span class="line"><span class="string">        console.log('</span>showshowshowshow<span class="string">')</span></span><br><span class="line"><span class="string">        this.showmenu = true</span></span><br><span class="line"><span class="string">      &#125;</span></span><br><span class="line"><span class="string">    &#125;</span></span><br><span class="line"><span class="string">  &#125;,</span></span><br><span class="line"><span class="string">  mounted() &#123;</span></span><br><span class="line"><span class="string">    var loader = document.getElementById('</span>loader-wrapper<span class="string">');</span></span><br><span class="line"><span class="string">    setTimeout(() =&gt; &#123;</span></span><br><span class="line"><span class="string">      loader &amp;&amp; document.body.removeChild(loader)</span></span><br><span class="line"><span class="string">    &#125;, 1000);</span></span><br><span class="line"><span class="string">  &#125;</span></span><br><span class="line"><span class="string">&#125;</span></span><br><span class="line"><span class="string">&lt;/script&gt;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&lt;style&gt;</span></span><br><span class="line"><span class="string">* &#123;</span></span><br><span class="line"><span class="string">  margin: 0;</span></span><br><span class="line"><span class="string">  padding: 0;</span></span><br><span class="line"><span class="string">&#125;</span></span><br><span class="line"><span class="string">body &#123;</span></span><br><span class="line"><span class="string">  width: 100vw;</span></span><br><span class="line"><span class="string">  height: 100vh;</span></span><br><span class="line"><span class="string">  overflow: hidden;</span></span><br><span class="line"><span class="string">  background-color: #33C379;</span></span><br><span class="line"><span class="string">  position: relative;</span></span><br><span class="line"><span class="string">&#125;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">#app &#123;</span></span><br><span class="line"><span class="string">  position: relative;</span></span><br><span class="line"><span class="string">  width: 100vw;</span></span><br><span class="line"><span class="string">  height: 100vh;</span></span><br><span class="line"><span class="string">  overflow: hidden;</span></span><br><span class="line"><span class="string">  background-color: #224b8f;</span></span><br><span class="line"><span class="string">  display: flex;</span></span><br><span class="line"><span class="string">  flex-direction: column;</span></span><br><span class="line"><span class="string">  justify-content: flex-start;</span></span><br><span class="line"><span class="string">&#125;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">.menu &#123;</span></span><br><span class="line"><span class="string">  width: 100%;</span></span><br><span class="line"><span class="string">  height: 300px;</span></span><br><span class="line"><span class="string">  background-color: #f47920;</span></span><br><span class="line"><span class="string">  flex-shrink: 0;</span></span><br><span class="line"><span class="string">  transition: all 1.0s ease-in-out;</span></span><br><span class="line"><span class="string">&#125;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">.menu button &#123;</span></span><br><span class="line"><span class="string">    background-color: antiquewhite;</span></span><br><span class="line"><span class="string">    width: 100px;</span></span><br><span class="line"><span class="string">    height: 44px;</span></span><br><span class="line"><span class="string">&#125;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">.container &#123;</span></span><br><span class="line"><span class="string">  width: 100%;</span></span><br><span class="line"><span class="string">  background-color: #6f60aa;</span></span><br><span class="line"><span class="string">  flex-grow: 1;</span></span><br><span class="line"><span class="string">  overflow-y: scroll;</span></span><br><span class="line"><span class="string">  opacity: 0.5;</span></span><br><span class="line"><span class="string">&#125;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">.item &#123;</span></span><br><span class="line"><span class="string">  height: 200px;</span></span><br><span class="line"><span class="string">  width: 100%;</span></span><br><span class="line"><span class="string">  background-color: #dea32c;</span></span><br><span class="line"><span class="string">  border: thin solid #00a6ac;</span></span><br><span class="line"><span class="string">&#125;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">.menu-show &#123;</span></span><br><span class="line"><span class="string">  margin-top:0px;</span></span><br><span class="line"><span class="string">&#125;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">.menu-hide &#123;</span></span><br><span class="line"><span class="string">  margin-top: -300px;</span></span><br><span class="line"><span class="string">&#125;</span></span><br><span class="line"><span class="string">&lt;/style&gt;</span></span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://at719.com/2018/11/26/blog_vue_1/" data-id="cjoy4mtx10000cmt3w64bnvpo" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/">vue</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web/">web</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-blog_vue_1543203978" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/11/26/blog_vue_1543203978/" class="article-date">
-  <time datetime="2018-11-26T03:46:18.000Z" itemprop="datePublished">2018-11-26</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/11/26/blog_vue_1543203978/">tab切换,延迟自定义组件的初始化</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>首次加载web时希望减少加载时间，提高用户友好体验<br>假如我有5个tab 每个tab分别对应一个自定义组件<br>我希望第一次加载时先加载默认显示的组件<br>其余组件延迟加载等用户切换时在显示并处理自定义组件里的事件，</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line">    &lt;template&gt;</span><br><span class="line">  &lt;div id=<span class="string">"app"</span> &gt;</span><br><span class="line">    &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"app-main"</span>&gt;</span><br><span class="line">      &lt;component v-bind:is=<span class="string">"tabComponent0"</span> :show=<span class="string">"(tabIndex == 0)"</span> ref=<span class="string">"x1"</span> &gt;&lt;/component&gt;</span><br><span class="line">      &lt;component v-bind:is=<span class="string">"tabComponent1"</span> :show=<span class="string">"(tabIndex == 1)"</span> ref=<span class="string">"x2"</span> &gt;&lt;/component&gt;</span><br><span class="line">      &lt;component v-bind:is=<span class="string">"tabComponent2"</span> :show=<span class="string">"(tabIndex == 2)"</span> ref=<span class="string">"x3"</span> &gt;&lt;/component&gt;</span><br><span class="line">      &lt;component v-bind:is=<span class="string">"tabComponent3"</span> :show=<span class="string">"(tabIndex == 3)"</span> ref=<span class="string">"x4"</span> &gt;&lt;/component&gt;</span><br><span class="line">      &lt;component v-bind:is=<span class="string">"tabComponent4"</span> :show=<span class="string">"(tabIndex == 4)"</span> ref=<span class="string">"x5"</span> &gt;&lt;/component&gt;</span><br><span class="line">    &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">    &lt;xfooter v-on:tabSwitch="onTabSwitch"  &gt;&lt;/</span>xfooter&gt;</span><br><span class="line">  </span><br><span class="line">  &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>template&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> x1 = <span class="function"><span class="params">()</span> =&gt;</span> <span class="keyword">import</span>(<span class="string">'@/page/friend/x1.vue'</span>)</span><br><span class="line"><span class="keyword">const</span> x2 = <span class="function"><span class="params">()</span> =&gt;</span> <span class="keyword">import</span>(<span class="string">'@/page/friend/x2.vue'</span>)</span><br><span class="line"><span class="keyword">const</span> x3 = <span class="function"><span class="params">()</span> =&gt;</span> <span class="keyword">import</span>(<span class="string">'@/page/friend/x3.vue'</span>)</span><br><span class="line"><span class="keyword">const</span> x4 = <span class="function"><span class="params">()</span> =&gt;</span> <span class="keyword">import</span>(<span class="string">'@/page/friend/x4.vue'</span>)</span><br><span class="line"><span class="keyword">const</span> x5 = <span class="function"><span class="params">()</span> =&gt;</span> <span class="keyword">import</span>(<span class="string">'@/page/friend/x5.vue'</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  name: <span class="string">'App'</span>,</span><br><span class="line">  components: &#123;</span><br><span class="line">   x1,</span><br><span class="line">   x2,</span><br><span class="line">   x3,</span><br><span class="line">   x4,</span><br><span class="line">   x5,</span><br><span class="line">  &#125;,</span><br><span class="line">  data () &#123;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">      tabComponent0: <span class="literal">null</span>,</span><br><span class="line">      tabComponent1: <span class="literal">null</span>,</span><br><span class="line">      tabComponent2: <span class="string">'x3'</span>,</span><br><span class="line">      tabComponent3: <span class="literal">null</span>,</span><br><span class="line">      tabComponent4: <span class="literal">null</span>,</span><br><span class="line">      tabComponents: [<span class="string">'x1'</span>, <span class="string">'x2'</span>, <span class="string">'x3'</span>, <span class="string">'x4'</span>, <span class="string">'x5'</span>]</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  methods: &#123;</span><br><span class="line">    onTabSwitch (tabIndex) &#123;</span><br><span class="line">      <span class="keyword">this</span>[<span class="string">`tabComponent<span class="subst">$&#123;tabIndex&#125;</span>`</span>] = <span class="keyword">this</span>.tabComponents[tabIndex]</span><br><span class="line">      <span class="keyword">this</span>.tabIndex = tabIndex</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">&lt;style  lang="less"&gt;</span></span><br><span class="line"><span class="regexp">    @import "./</span>App.less<span class="string">";</span></span><br><span class="line"><span class="string">&lt;/style&gt;</span></span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://at719.com/2018/11/26/blog_vue_1543203978/" data-id="cjoxs7e7z00003zt3ykzew3om" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/">vue</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web/">web</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-mxgraph_mxConstants" class="article article-type-post" itemscope="" itemprop="blogPost">
+        <section id="main"><article id="post-mxgraph_mxConstants" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/11/22/mxgraph_mxConstants/" class="article-date">
   <time datetime="2018-11-22T01:17:11.000Z" itemprop="datePublished">2018-11-22</time>
@@ -245,8 +82,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/11/22/mxgraph_mxConstants/">mxgraph源码阅读之mxConstants</a>
+    <h1 class="article-title" itemprop="name">
+      mxgraph源码阅读之mxConstants
     </h1>
   
 
@@ -266,92 +103,28 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-mxgraph_1" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/11/19/mxgraph_1/" class="article-date">
-  <time datetime="2018-11-19T06:46:18.000Z" itemprop="datePublished">2018-11-19</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+    <a href="/2018/11/26/blog_vue_1543203978/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/11/19/mxgraph_1/">mxgraph源码阅读</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>mxgraph用来画流程图非常不错，譬如我就拿来实现一个类似建算法模型拖拽的产品。<br>准备花点时间研究一下它的源码</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://at719.com/2018/11/19/mxgraph_1/" data-id="cjoo07etr0000bjt3qxtqokct" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/graph/">graph</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mxgraph/">mxgraph</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-ecs1" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/11/19/ecs1/" class="article-date">
-  <time datetime="2018-11-19T06:46:18.000Z" itemprop="datePublished">2018-11-19</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+          tab切换,延迟自定义组件的初始化
         
+      </div>
+    </a>
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/11/19/ecs1/">ECS主机从外网80端口访问内部不同端口web</a>
-    </h1>
   
+    <a href="/2018/11/19/mxgraph_1/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">mxgraph源码阅读</div>
+    </a>
+  
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>一般linux环境下，使用nginx并访问1024以下的端口,需要使用root权限，自己不愿意使用root权限<br>查了查使用iptables转发端口的方式解决</p>
-<h3 id="解决步骤"><a href="#解决步骤" class="headerlink" title="解决步骤"></a>解决步骤</h3><h4 id="使用iptables建立端口映射-比如443映射到1234"><a href="#使用iptables建立端口映射-比如443映射到1234" class="headerlink" title="使用iptables建立端口映射 比如443映射到1234"></a>使用iptables建立端口映射 比如443映射到1234</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iptables -t nat -A PREROUTING -p tcp --dport 443 -j REDIRECT --to-ports 1234</span><br></pre></td></tr></table></figure>
-<h4 id="修改nginx配置"><a href="#修改nginx配置" class="headerlink" title="修改nginx配置"></a>修改nginx配置</h4><p><img src="https://at719.com/xassets/0AB2D615-81C1-403D-B336-725D1F90A72B.png" alt="图片alt"></p>
-<p><em>注意</em><br>红框的那行代码,off的情况下跳转才不带端口 详情自己查nginx文档</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://at719.com/2018/11/19/ecs1/" data-id="cjoryiytv00006it3umi9wri7" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/nginx/">nginx</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web/">web</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
-
-
-  
-
 
 </section>
         
