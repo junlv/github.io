@@ -1,25 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on 自在生活</title>
-    <link>https://www.at719.com/posts/</link>
-    <description>Recent content in Posts on 自在生活</description>
+    <title>Vue on 自在生活</title>
+    <link>https://www.at719.com/tags/vue/</link>
+    <description>Recent content in Vue on 自在生活</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://www.at719.com&#34;&gt;at719&lt;/a&gt; 2018</copyright>
-    <lastBuildDate>Mon, 01 Apr 2019 11:27:56 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 26 Nov 2018 11:46:18 +0000</lastBuildDate>
     
-	<atom:link href="https://www.at719.com/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.at719.com/tags/vue/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>About</title>
-      <link>https://www.at719.com/posts/about/</link>
-      <pubDate>Mon, 01 Apr 2019 11:27:56 +0800</pubDate>
-      
-      <guid>https://www.at719.com/posts/about/</guid>
-      <description>What?</description>
-    </item>
     
     <item>
       <title>tab切换,延迟自定义组件的初始化</title>
@@ -29,17 +20,6 @@
       <guid>https://www.at719.com/posts/blog_vue_1543203978/</guid>
       <description>首次加载web时希望减少加载时间，提高用户友好体验 假如我有5个tab 每个tab分别对应一个自定义组件 我希望第一次加载时先加载默认显示的组件 其余组件延迟加载等用户切换时在显示并处理自定义组件里的事件，
 &amp;lt;template&amp;gt; &amp;lt;div id=&amp;quot;app&amp;quot; &amp;gt; &amp;lt;div class=&amp;quot;app-main&amp;quot;&amp;gt; &amp;lt;component v-bind:is=&amp;quot;tabComponent0&amp;quot; :show=&amp;quot;(tabIndex == 0)&amp;quot; ref=&amp;quot;x1&amp;quot; &amp;gt;&amp;lt;/component&amp;gt; &amp;lt;component v-bind:is=&amp;quot;tabComponent1&amp;quot; :show=&amp;quot;(tabIndex == 1)&amp;quot; ref=&amp;quot;x2&amp;quot; &amp;gt;&amp;lt;/component&amp;gt; &amp;lt;component v-bind:is=&amp;quot;tabComponent2&amp;quot; :show=&amp;quot;(tabIndex == 2)&amp;quot; ref=&amp;quot;x3&amp;quot; &amp;gt;&amp;lt;/component&amp;gt; &amp;lt;component v-bind:is=&amp;quot;tabComponent3&amp;quot; :show=&amp;quot;(tabIndex == 3)&amp;quot; ref=&amp;quot;x4&amp;quot; &amp;gt;&amp;lt;/component&amp;gt; &amp;lt;component v-bind:is=&amp;quot;tabComponent4&amp;quot; :show=&amp;quot;(tabIndex == 4)&amp;quot; ref=&amp;quot;x5&amp;quot; &amp;gt;&amp;lt;/component&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;xfooter v-on:tabSwitch=&amp;quot;onTabSwitch&amp;quot; &amp;gt;&amp;lt;/xfooter&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/template&amp;gt; &amp;lt;script&amp;gt; const x1 = () =&amp;gt; import(&#39;@/page/friend/x1.vue&#39;) const x2 = () =&amp;gt; import(&#39;@/page/friend/x2.vue&#39;) const x3 = () =&amp;gt; import(&#39;@/page/friend/x3.</description>
-    </item>
-    
-    <item>
-      <title>ECS主机从外网80端口访问内部不同端口web</title>
-      <link>https://www.at719.com/posts/first/</link>
-      <pubDate>Mon, 19 Nov 2018 14:46:18 +0000</pubDate>
-      
-      <guid>https://www.at719.com/posts/first/</guid>
-      <description>一般linux环境下，使用nginx并访问1024以下的端口,需要使用root权限，自己不愿意使用root权限
-查了查使用iptables转发端口的方式解决
-解决步骤 使用iptables建立端口映射 比如443映射到1234 iptables -t nat -A PREROUTING -p tcp --dport 443 -j REDIRECT --to-ports 1234  修改nginx配置 注意 红框的那行代码,off的情况下跳转才不带端口 详情自己查nginx文档</description>
     </item>
     
   </channel>

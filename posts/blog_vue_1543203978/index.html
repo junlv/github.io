@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+<title>tab切换,延迟自定义组件的初始化 | 自在生活</title>
+
+<link rel="stylesheet" href="https://www.at719.com/css/styles.css">
+
+<link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/5.8.1/css/all.css" 
+ crossorigin="anonymous">
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js" ></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/zenburn.min.css"  />
+<script src="https://cdn.bootcss.com/highlight.js/9.15.6/highlight.min.js"  crossorigin="anonymous" ></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="https://www.at719.com/js/highlight.js"></script>
+
+
+
+
+<div class="container">
+    <nav class="navbar level">
+      <div class="navbar-brand">
+          <a class="nav-item" href="https://www.at719.com"><h1 class="title is-3">自在生活</h1></a>
+      </div>           
+      <div class="navbar-menu has-text-centered is-active">
+          <div class="navbar-end is-centered">
+              
+                <a href="https://github.com/junlv/">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                </a>
+              
+           </div>
+      </div>
+    </nav>
+  </div>
+<div class="container">
+  <h2 class="subtitle is-6">November 26, 2018
+      
+      
+         <a href="https://www.at719.com/tags/vue">vue</a> 
+      
+         <a href="https://www.at719.com/tags/web">web</a> 
+      
+    
+  </h2>
+  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">tab切换,延迟自定义组件的初始化</h1>
+  <div class="content">
+    <p>首次加载web时希望减少加载时间，提高用户友好体验
+假如我有5个tab 每个tab分别对应一个自定义组件
+我希望第一次加载时先加载默认显示的组件
+其余组件延迟加载等用户切换时在显示并处理自定义组件里的事件，</p>
+
+<pre><code class="language-javascript">    &lt;template&gt;
+  &lt;div id=&quot;app&quot; &gt;
+    &lt;div class=&quot;app-main&quot;&gt;
+      &lt;component v-bind:is=&quot;tabComponent0&quot; :show=&quot;(tabIndex == 0)&quot; ref=&quot;x1&quot; &gt;&lt;/component&gt;
+      &lt;component v-bind:is=&quot;tabComponent1&quot; :show=&quot;(tabIndex == 1)&quot; ref=&quot;x2&quot; &gt;&lt;/component&gt;
+      &lt;component v-bind:is=&quot;tabComponent2&quot; :show=&quot;(tabIndex == 2)&quot; ref=&quot;x3&quot; &gt;&lt;/component&gt;
+      &lt;component v-bind:is=&quot;tabComponent3&quot; :show=&quot;(tabIndex == 3)&quot; ref=&quot;x4&quot; &gt;&lt;/component&gt;
+      &lt;component v-bind:is=&quot;tabComponent4&quot; :show=&quot;(tabIndex == 4)&quot; ref=&quot;x5&quot; &gt;&lt;/component&gt;
+    &lt;/div&gt;
+    &lt;xfooter v-on:tabSwitch=&quot;onTabSwitch&quot;  &gt;&lt;/xfooter&gt;
+  
+  &lt;/div&gt;
+&lt;/template&gt;
+&lt;script&gt;
+
+const x1 = () =&gt; import('@/page/friend/x1.vue')
+const x2 = () =&gt; import('@/page/friend/x2.vue')
+const x3 = () =&gt; import('@/page/friend/x3.vue')
+const x4 = () =&gt; import('@/page/friend/x4.vue')
+const x5 = () =&gt; import('@/page/friend/x5.vue')
+
+export default {
+  name: 'App',
+  components: {
+   x1,
+   x2,
+   x3,
+   x4,
+   x5,
+  },
+  data () {
+    return {
+      tabComponent0: null,
+      tabComponent1: null,
+      tabComponent2: 'x3',
+      tabComponent3: null,
+      tabComponent4: null,
+      tabComponents: ['x1', 'x2', 'x3', 'x4', 'x5']
+    }
+  },
+  methods: {
+    onTabSwitch (tabIndex) {
+      this[`tabComponent${tabIndex}`] = this.tabComponents[tabIndex]
+      this.tabIndex = tabIndex
+    }
+  }
+}
+&lt;/script&gt;
+
+&lt;style  lang=&quot;less&quot;&gt;
+    @import &quot;./App.less&quot;;
+&lt;/style&gt;
+
+</code></pre>
+
+  </div>
+</div>
+
+<div class="container has-text-centered">
+ 
+</div>
+
+<div class="container has-text-centered">
+  
+</div>
+<section class="section">
+  <div class="container has-text-centered">
+    
+  </div>
+</section>
+
+
