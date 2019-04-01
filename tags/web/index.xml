@@ -18,7 +18,8 @@
       <pubDate>Mon, 19 Nov 2018 14:46:18 +0000</pubDate>
       
       <guid>https://www.at719.com/posts/first/</guid>
-      <description>一般linux环境下，使用nginx并访问1024以下的端口,需要使用root权限，自己不愿意使用root权限 查了查使用iptables转发端口的方式解决
+      <description>一般linux环境下，使用nginx并访问1024以下的端口,需要使用root权限，自己不愿意使用root权限
+查了查使用iptables转发端口的方式解决
 解决步骤 使用iptables建立端口映射 比如443映射到1234 iptables -t nat -A PREROUTING -p tcp --dport 443 -j REDIRECT --to-ports 1234  修改nginx配置 注意 红框的那行代码,off的情况下跳转才不带端口 详情自己查nginx文档</description>
     </item>
     
