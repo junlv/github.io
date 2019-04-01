@@ -32,7 +32,7 @@
     </item>
     
     <item>
-      <title>ECS主机从外网80端口访问内部不同端口web</title>
+      <title>非ROOT权限运行nginx并访问1024以下端口</title>
       <link>https://www.at719.com/posts/first/</link>
       <pubDate>Mon, 19 Nov 2018 14:46:18 +0000</pubDate>
       
