@@ -22,6 +22,16 @@
     </item>
     
     <item>
+      <title>根据手势上下方向，显示或隐藏部分内容(vue)</title>
+      <link>https://www.at719.com/posts/blog_vue_1/</link>
+      <pubDate>Mon, 26 Nov 2018 17:48:39 +0000</pubDate>
+      
+      <guid>https://www.at719.com/posts/blog_vue_1/</guid>
+      <description>如图
+&amp;lt;template&amp;gt; &amp;lt;div id=&amp;quot;app&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;menu&amp;quot; v-bind:class=&amp;quot;{&#39;menu-show&#39;: showmenu, &#39;menu-hide&#39;: !showmenu }&amp;quot; &amp;gt; &amp;lt;button&amp;gt;button1&amp;lt;/button&amp;gt; &amp;lt;button&amp;gt;button2&amp;lt;/button&amp;gt; &amp;lt;button&amp;gt;button3&amp;lt;/button&amp;gt; &amp;lt;button&amp;gt;button4&amp;lt;/button&amp;gt; &amp;lt;button&amp;gt;button5&amp;lt;/button&amp;gt; &amp;lt;button&amp;gt;button6&amp;lt;/button&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;container&amp;quot; id=&amp;quot;myscroller&amp;quot; ref=&amp;quot;myscroller&amp;quot; @touchmove=&amp;quot;touchMove($event)&amp;quot; &amp;gt; &amp;lt;div class=&amp;quot;item&amp;quot; v-for=&amp;quot;(item,index) in 20&amp;quot; v-bind:key=&amp;quot;index&amp;quot;&amp;gt;{{item}}&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/template&amp;gt; &amp;lt;script&amp;gt; // import HelloWorld from &#39;./components/HelloWorld.vue&#39; export default { name: &#39;app&#39;, components: { // HelloWorld }, data () { return { showmenu:true } }, methods : { /* eslint-disable no-console */ touchMove () { console.log(&#39;touchMove&#39;) console.log(this.$refs.myscroller.scrollTop) let offset = this.</description>
+    </item>
+    
+    <item>
       <title>tab切换,延迟自定义组件的初始化</title>
       <link>https://www.at719.com/posts/blog_vue_1543203978/</link>
       <pubDate>Mon, 26 Nov 2018 11:46:18 +0000</pubDate>
