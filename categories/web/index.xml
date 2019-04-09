@@ -33,16 +33,6 @@
     </item>
     
     <item>
-      <title>调试工具console.log日常使用</title>
-      <link>https://www.at719.com/posts/console_log/</link>
-      <pubDate>Mon, 26 Nov 2018 11:46:18 +0000</pubDate>
-      
-      <guid>https://www.at719.com/posts/console_log/</guid>
-      <description> 日常 web 项目开发,我们需要使用 console 来调试我们代码，这里总结一下常用的方法
-console.log 打印字符串 </description>
-    </item>
-    
-    <item>
       <title>非ROOT权限运行nginx并访问1024以下端口</title>
       <link>https://www.at719.com/posts/first/</link>
       <pubDate>Mon, 19 Nov 2018 14:46:18 +0000</pubDate>
