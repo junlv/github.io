@@ -7,10 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://www.at719.com&#34;&gt;at719&lt;/a&gt; 2018</copyright>
-    <lastBuildDate>Mon, 26 Nov 2018 17:48:39 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 08 Apr 2019 09:33:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.at719.com/categories/web/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>调试console总结</title>
+      <link>https://www.at719.com/posts/console_memo1/</link>
+      <pubDate>Mon, 08 Apr 2019 09:33:00 +0000</pubDate>
+      
+      <guid>https://www.at719.com/posts/console_memo1/</guid>
+      <description>日常 web 项目开发,我们需要使用 console 来调试我们代码，这里总结 console 常用的方法
+console.log() 日志打印 打印字符串 %s #console.clear() 清空控制台
+#console.dir()
+和 console.log 类似 截图可以对比查看对象的不同</description>
+    </item>
     
     <item>
       <title>根据手势上下方向，显示或隐藏部分内容(vue)</title>
