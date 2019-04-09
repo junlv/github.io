@@ -19,9 +19,7 @@
       
       <guid>https://www.at719.com/posts/console_memo1/</guid>
       <description>日常 console 调试使用笔记
-console.log() 日志打印 打印字符串 %s #console.clear() 清空控制台
-#console.dir()
-和 console.log 类似 截图可以对比查看对象的不同</description>
+console.log() 日志打印 打印字符串 %s console.clear() 清空控制台 console.dir() 和 console.log 类似 截图可以对比查看对象的不同</description>
     </item>
     
     <item>
