@@ -13,7 +13,7 @@
     
     
     <item>
-      <title>调试console总结</title>
+      <title>chrome web调试总结</title>
       <link>https://www.at719.com/posts/console_memo1/</link>
       <pubDate>Mon, 08 Apr 2019 09:33:00 +0000</pubDate>
       
@@ -21,9 +21,13 @@
       <description>日常 console 调试使用笔记
 console.log() 日志打印
 打印字符串 %s
-打印对象 %o
+打印对象 %o 可展开的 DOM %O 列出 DOM 的属性
+打印整数 %d or %i
+打印浮点数 %f
 console.clear() 清空控制台
-console.dir() 和 console.log 类似 截图可以对比查看对象的不同</description>
+console.dir() 和 console.log 类似 截图可以对比查看对象的不同
+#getEventListeners(document.getElementById(&amp;lsquo;id&amp;rsquo;))
+获取绑定在指定 dom 上的事件集</description>
     </item>
     
     <item>
