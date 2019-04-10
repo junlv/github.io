@@ -26,8 +26,7 @@ console.log() 日志打印
 打印浮点数 %f
 console.clear() 清空控制台
 console.dir() 和 console.log 类似 截图可以对比查看对象的不同
-#getEventListeners(document.getElementById(&amp;lsquo;id&amp;rsquo;))
-获取绑定在指定 dom 上的事件集</description>
+getEventListeners(document.getElementById(&amp;lsquo;id&amp;rsquo;)) 获取绑定在指定 dom 上的事件集</description>
     </item>
     
     <item>
