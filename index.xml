@@ -25,6 +25,15 @@ var a = [1,2,3] console.log(a.forEach(function(item) { console.log(item)})) // �
     </item>
     
     <item>
+      <title>Golang杂物柜</title>
+      <link>/posts/golang_memo/</link>
+      <pubDate>Wed, 10 Apr 2019 09:33:00 +0000</pubDate>
+      
+      <guid>/posts/golang_memo/</guid>
+      <description> 数组结构 </description>
+    </item>
+    
+    <item>
       <title>chrome web调试总结</title>
       <link>/posts/console_memo1/</link>
       <pubDate>Mon, 08 Apr 2019 09:33:00 +0000</pubDate>
