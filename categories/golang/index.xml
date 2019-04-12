@@ -18,7 +18,10 @@
       <pubDate>Wed, 10 Apr 2019 09:33:00 +0000</pubDate>
       
       <guid>https://www.at719.com/posts/golang_memo/</guid>
-      <description> 数组 声明数组 var arr [3]string  初始化数组 var arr= [3]string{&amp;quot;i&amp;quot;，&amp;quot;love&amp;quot;,&amp;quot;you&amp;quot;} 或者 var arr= [...]string{&amp;quot;i&amp;quot;，&amp;quot;love&amp;quot;,&amp;quot;you&amp;quot;}  遍历数组 var arr= [...]string{&amp;quot;i&amp;quot;，&amp;quot;love&amp;quot;,&amp;quot;you&amp;quot;} for k,v := range arr { }  </description>
+      <description>数组 声明数组 var arr [3]string  初始化数组 var arr= [3]string{&amp;quot;i&amp;quot;，&amp;quot;love&amp;quot;,&amp;quot;you&amp;quot;} 或者 var arr= [...]string{&amp;quot;i&amp;quot;，&amp;quot;love&amp;quot;,&amp;quot;you&amp;quot;}  遍历数组 var arr= [...]string{&amp;quot;i&amp;quot;，&amp;quot;love&amp;quot;,&amp;quot;you&amp;quot;} for k,v := range arr { }  切片 切片的定义 var s1 []int ; var s2 []int ;
+切片的创建 var s1 []int = make([]int, 5, 8) var s2 []int = make([]int, 8) // 满容切片
+// 使用 make 函数创建的切片内容是「零值切片」，也就是内部数组的元素都是零值
+切片 make var s []int = []int{1,2,3,4,5} // 满容的 // Go 语言提供了内置函数 len() 和 cap() 可以直接获得切片的长度和容量属性。</description>
     </item>
     
   </channel>
