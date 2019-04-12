@@ -38,7 +38,12 @@ console.log() 日志打印
 打印浮点数 %f
 console.clear() 清空控制台
 console.dir() 和 console.log 类似 截图可以对比查看对象的不同
-getEventListeners(document.getElementById(&amp;lsquo;id&amp;rsquo;)) 获取绑定在指定 dom 上的事件集</description>
+getEventListeners(document.getElementById(&amp;lsquo;id&amp;rsquo;)) 获取绑定在指定 dom 上的事件集
+monitorEvents监控事件 如果希望在执行绑定到 DOM 中特定元素的事件时监视它们，也可以在控制台中这样做。你可以使用不同的命令来监控其中的一些或所有事件: 如果希望在执行绑定到DOM中特定元素的事件时监视它们，也可以在控制台中这样做。你可以使用不同的命令来监控其中的一些或所有事件:
+monitorEvents($(‘selector’)) 将监视与选择器的元素关联的所有事件，然后在它们被触发时将它们打印到控制台。例如，monitore($(#firstName)) 将打印 ID 为 firstName元素的所有事件。
+monitorEvents($(‘selector’),’eventName’) 将打印与元素绑定的特定事件。 你可以将事件名称作为参数传递给函数。 这将仅记录绑定到特定元素的特定事件。 例如，monitorEvents($(‘#firstName’),’click’) 将打印绑定到ID为&amp;rsquo;firstName&amp;rsquo;的元素的所有 click 事件。
+monitore($(selector)，[eventName1, eventName3&amp;rsquo;， .])将根据您自己的需求记录多个事件。与其传递单个事件名作为参数，不如传递包含所有事件的字符串数组。例如monitore($(#firstName)，[click, focus])将记录与ID firstName元素绑定的 click事件和focus事件。
+unmonitorevent ($(selector)):这将停止监视和打印控制台中的事件。</description>
     </item>
     
     <item>
