@@ -18,7 +18,7 @@
       <pubDate>Wed, 10 Apr 2019 09:33:00 +0000</pubDate>
       
       <guid>/posts/golang_memo/</guid>
-      <description> 数组结构 声明数组 var arr [3]string  初始化数组 var team= [3]string{&amp;quot;i&amp;quot;，&amp;quot;love&amp;quot;,&amp;quot;you&amp;quot;} 或者 var team= [...]string{&amp;quot;i&amp;quot;，&amp;quot;love&amp;quot;,&amp;quot;you&amp;quot;}  遍历数组 var team= [...]string{&amp;quot;i&amp;quot;，&amp;quot;love&amp;quot;,&amp;quot;you&amp;quot;} for k,v := range team { }  </description>
+      <description> 数组结构 声明数组 var arr [3]string  初始化数组 var arr= [3]string{&amp;quot;i&amp;quot;，&amp;quot;love&amp;quot;,&amp;quot;you&amp;quot;} 或者 var arr= [...]string{&amp;quot;i&amp;quot;，&amp;quot;love&amp;quot;,&amp;quot;you&amp;quot;}  遍历数组 var arr= [...]string{&amp;quot;i&amp;quot;，&amp;quot;love&amp;quot;,&amp;quot;you&amp;quot;} for k,v := range arr { }  </description>
     </item>
     
   </channel>
