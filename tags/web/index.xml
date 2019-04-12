@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://www.at719.com&#34;&gt;at719&lt;/a&gt; 2018</copyright>
-    <lastBuildDate>Mon, 08 Apr 2019 09:33:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 11 Apr 2019 09:33:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.at719.com/tags/web/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Javascript_memo</title>
+      <link>https://www.at719.com/posts/javascript_memo/</link>
+      <pubDate>Thu, 11 Apr 2019 09:33:00 +0000</pubDate>
+      
+      <guid>https://www.at719.com/posts/javascript_memo/</guid>
+      <description> Date 当前unix时间戳(毫秒) Date.now() 方法，返回表示调用这个方法时的日期和时间的毫秒数
+var a = Date.now() console.log(a) VM789:2 1555030834615  数组 </description>
+    </item>
     
     <item>
       <title>chrome web调试总结</title>
