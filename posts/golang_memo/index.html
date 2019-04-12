@@ -30,7 +30,15 @@
     <div class="toc-content">
         <nav id="TableOfContents">
 <ul>
-<li><a href="#数组结构">数组结构</a></li>
+<li>
+<ul>
+<li><a href="#数组结构">数组结构</a>
+<ul>
+<li><a href="#声明数组">声明数组</a></li>
+<li><a href="#初始化数组">初始化数组</a></li>
+<li><a href="#遍历数组">遍历数组</a></li>
+</ul></li>
+</ul></li>
 </ul>
 </nav>
     </div>
@@ -78,12 +86,26 @@
   <div class="content">
     
 
-<h1 id="数组结构">数组结构</h1>
+<h2 id="数组结构">数组结构</h2>
 
-<pre><code class="language-go">
-var arr [3]string
+<h3 id="声明数组">声明数组</h3>
 
+<pre><code class="language-go">var arr [3]string
+</code></pre>
 
+<h3 id="初始化数组">初始化数组</h3>
+
+<pre><code class="language-go">var team= [3]string{&quot;i&quot;，&quot;love&quot;,&quot;you&quot;}
+或者
+var team= [...]string{&quot;i&quot;，&quot;love&quot;,&quot;you&quot;}
+</code></pre>
+
+<h3 id="遍历数组">遍历数组</h3>
+
+<pre><code class="language-go">var team= [...]string{&quot;i&quot;，&quot;love&quot;,&quot;you&quot;}
+for k,v := range team {
+
+}
 </code></pre>
 
   </div>
