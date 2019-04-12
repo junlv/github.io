@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vue on 自在生活</title>
-    <link>https://www.at719.com/tags/vue/</link>
+    <link>/tags/vue/</link>
     <description>Recent content in Vue on 自在生活</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://www.at719.com&#34;&gt;at719&lt;/a&gt; 2018</copyright>
     <lastBuildDate>Mon, 26 Nov 2018 17:48:39 +0000</lastBuildDate>
     
-	<atom:link href="https://www.at719.com/tags/vue/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/vue/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>根据手势上下方向，显示或隐藏部分内容(vue)</title>
-      <link>https://www.at719.com/posts/blog_vue_1/</link>
+      <link>/posts/blog_vue_1/</link>
       <pubDate>Mon, 26 Nov 2018 17:48:39 +0000</pubDate>
       
-      <guid>https://www.at719.com/posts/blog_vue_1/</guid>
+      <guid>/posts/blog_vue_1/</guid>
       <description>如图
 &amp;lt;template&amp;gt; &amp;lt;div id=&amp;quot;app&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;menu&amp;quot; v-bind:class=&amp;quot;{&#39;menu-show&#39;: showmenu, &#39;menu-hide&#39;: !showmenu }&amp;quot; &amp;gt; &amp;lt;button&amp;gt;button1&amp;lt;/button&amp;gt; &amp;lt;button&amp;gt;button2&amp;lt;/button&amp;gt; &amp;lt;button&amp;gt;button3&amp;lt;/button&amp;gt; &amp;lt;button&amp;gt;button4&amp;lt;/button&amp;gt; &amp;lt;button&amp;gt;button5&amp;lt;/button&amp;gt; &amp;lt;button&amp;gt;button6&amp;lt;/button&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;container&amp;quot; id=&amp;quot;myscroller&amp;quot; ref=&amp;quot;myscroller&amp;quot; @touchmove=&amp;quot;touchMove($event)&amp;quot; &amp;gt; &amp;lt;div class=&amp;quot;item&amp;quot; v-for=&amp;quot;(item,index) in 20&amp;quot; v-bind:key=&amp;quot;index&amp;quot;&amp;gt;{{item}}&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/template&amp;gt; &amp;lt;script&amp;gt; // import HelloWorld from &#39;./components/HelloWorld.vue&#39; export default { name: &#39;app&#39;, components: { // HelloWorld }, data () { return { showmenu:true } }, methods : { /* eslint-disable no-console */ touchMove () { console.log(&#39;touchMove&#39;) console.log(this.$refs.myscroller.scrollTop) let offset = this.</description>
     </item>
     
     <item>
       <title>tab切换,延迟自定义组件的初始化</title>
-      <link>https://www.at719.com/posts/blog_vue_1543203978/</link>
+      <link>/posts/blog_vue_1543203978/</link>
       <pubDate>Mon, 26 Nov 2018 11:46:18 +0000</pubDate>
       
-      <guid>https://www.at719.com/posts/blog_vue_1543203978/</guid>
+      <guid>/posts/blog_vue_1543203978/</guid>
       <description>首次加载web时希望减少加载时间，提高用户友好体验 假如我有5个tab 每个tab分别对应一个自定义组件 我希望第一次加载时先加载默认显示的组件 其余组件延迟加载等用户切换时在显示并处理自定义组件里的事件，
 &amp;lt;template&amp;gt; &amp;lt;div id=&amp;quot;app&amp;quot; &amp;gt; &amp;lt;div class=&amp;quot;app-main&amp;quot;&amp;gt; &amp;lt;component v-bind:is=&amp;quot;tabComponent0&amp;quot; :show=&amp;quot;(tabIndex == 0)&amp;quot; ref=&amp;quot;x1&amp;quot; &amp;gt;&amp;lt;/component&amp;gt; &amp;lt;component v-bind:is=&amp;quot;tabComponent1&amp;quot; :show=&amp;quot;(tabIndex == 1)&amp;quot; ref=&amp;quot;x2&amp;quot; &amp;gt;&amp;lt;/component&amp;gt; &amp;lt;component v-bind:is=&amp;quot;tabComponent2&amp;quot; :show=&amp;quot;(tabIndex == 2)&amp;quot; ref=&amp;quot;x3&amp;quot; &amp;gt;&amp;lt;/component&amp;gt; &amp;lt;component v-bind:is=&amp;quot;tabComponent3&amp;quot; :show=&amp;quot;(tabIndex == 3)&amp;quot; ref=&amp;quot;x4&amp;quot; &amp;gt;&amp;lt;/component&amp;gt; &amp;lt;component v-bind:is=&amp;quot;tabComponent4&amp;quot; :show=&amp;quot;(tabIndex == 4)&amp;quot; ref=&amp;quot;x5&amp;quot; &amp;gt;&amp;lt;/component&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;xfooter v-on:tabSwitch=&amp;quot;onTabSwitch&amp;quot; &amp;gt;&amp;lt;/xfooter&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/template&amp;gt; &amp;lt;script&amp;gt; const x1 = () =&amp;gt; import(&#39;@/page/friend/x1.vue&#39;) const x2 = () =&amp;gt; import(&#39;@/page/friend/x2.vue&#39;) const x3 = () =&amp;gt; import(&#39;@/page/friend/x3.</description>
     </item>
