@@ -18,7 +18,7 @@
       <pubDate>Wed, 10 Apr 2019 09:33:00 +0000</pubDate>
       
       <guid>/posts/golang_memo/</guid>
-      <description> 数组结构 </description>
+      <description> 数组结构 var arr [3]string  </description>
     </item>
     
   </channel>
