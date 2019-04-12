@@ -38,12 +38,7 @@
 <li><a href="#初始化数组">初始化数组</a></li>
 <li><a href="#遍历数组">遍历数组</a></li>
 </ul></li>
-<li><a href="#切片">切片</a>
-<ul>
-<li><a href="#切片的定义">切片的定义</a></li>
-<li><a href="#切片的创建">切片的创建</a></li>
-<li><a href="#切片-make">切片 make</a></li>
-</ul></li>
+<li><a href="#切片">切片</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -116,23 +111,6 @@ for k,v := range arr {
 </code></pre>
 
 <h2 id="切片">切片</h2>
-
-<h3 id="切片的定义">切片的定义</h3>
-
-<p>var s1 []int ;
-var s2 []int ;</p>
-
-<h3 id="切片的创建">切片的创建</h3>
-
-<p>var s1 []int = make([]int, 5, 8)
-var s2 []int = make([]int, 8) // 满容切片</p>
-
-<p>// 使用 make 函数创建的切片内容是「零值切片」，也就是内部数组的元素都是零值</p>
-
-<h3 id="切片-make">切片 make</h3>
-
-<p>var s []int = []int{1,2,3,4,5} // 满容的
-// Go 语言提供了内置函数 len() 和 cap() 可以直接获得切片的长度和容量属性。</p>
 
   </div>
 </div>
