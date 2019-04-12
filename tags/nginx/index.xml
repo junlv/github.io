@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nginx on 自在生活</title>
-    <link>/tags/nginx/</link>
+    <link>https://www.at719.com/tags/nginx/</link>
     <description>Recent content in Nginx on 自在生活</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://www.at719.com&#34;&gt;at719&lt;/a&gt; 2018</copyright>
     <lastBuildDate>Mon, 19 Nov 2018 14:46:18 +0000</lastBuildDate>
     
-	<atom:link href="/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.at719.com/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>非ROOT权限运行nginx并访问1024以下端口</title>
-      <link>/posts/first/</link>
+      <link>https://www.at719.com/posts/first/</link>
       <pubDate>Mon, 19 Nov 2018 14:46:18 +0000</pubDate>
       
-      <guid>/posts/first/</guid>
+      <guid>https://www.at719.com/posts/first/</guid>
       <description>一般linux环境下，使用nginx并访问1024以下的端口,需要使用root权限，自己不愿意使用root权限
 查了查使用iptables转发端口的方式解决
 解决步骤 使用iptables建立端口映射 比如443映射到1234 iptables -t nat -A PREROUTING -p tcp --dport 443 -j REDIRECT --to-ports 1234  修改nginx配置 注意 红框的那行代码,off的情况下跳转才不带端口 详情自己查nginx文档</description>

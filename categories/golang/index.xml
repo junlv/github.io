@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Golang on 自在生活</title>
-    <link>/categories/golang/</link>
+    <link>https://www.at719.com/categories/golang/</link>
     <description>Recent content in Golang on 自在生活</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://www.at719.com&#34;&gt;at719&lt;/a&gt; 2018</copyright>
     <lastBuildDate>Wed, 10 Apr 2019 09:33:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/golang/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.at719.com/categories/golang/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Golang杂物柜</title>
-      <link>/posts/golang_memo/</link>
+      <link>https://www.at719.com/posts/golang_memo/</link>
       <pubDate>Wed, 10 Apr 2019 09:33:00 +0000</pubDate>
       
-      <guid>/posts/golang_memo/</guid>
-      <description> 数组结构 声明数组 var arr [3]string  初始化数组 var arr= [3]string{&amp;quot;i&amp;quot;，&amp;quot;love&amp;quot;,&amp;quot;you&amp;quot;} 或者 var arr= [...]string{&amp;quot;i&amp;quot;，&amp;quot;love&amp;quot;,&amp;quot;you&amp;quot;}  遍历数组 var arr= [...]string{&amp;quot;i&amp;quot;，&amp;quot;love&amp;quot;,&amp;quot;you&amp;quot;} for k,v := range arr { }  </description>
+      <guid>https://www.at719.com/posts/golang_memo/</guid>
+      <description> 数组 声明数组 var arr [3]string  初始化数组 var arr= [3]string{&amp;quot;i&amp;quot;，&amp;quot;love&amp;quot;,&amp;quot;you&amp;quot;} 或者 var arr= [...]string{&amp;quot;i&amp;quot;，&amp;quot;love&amp;quot;,&amp;quot;you&amp;quot;}  遍历数组 var arr= [...]string{&amp;quot;i&amp;quot;，&amp;quot;love&amp;quot;,&amp;quot;you&amp;quot;} for k,v := range arr { }  </description>
     </item>
     
   </channel>
