@@ -33,6 +33,11 @@
   </url>
   
   <url>
+    <loc>https://www.at719.com/posts/git_memo/</loc>
+    <lastmod>2018-04-10T09:33:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.at719.com/categories/</loc>
     <priority>0</priority>
   </url>
@@ -64,6 +69,18 @@
   <url>
     <loc>https://www.at719.com/tags/</loc>
     <lastmod>2019-04-10T09:33:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.at719.com/tags/tools/</loc>
+    <lastmod>2018-04-10T09:33:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.at719.com/categories/tools/</loc>
+    <lastmod>2018-04-10T09:33:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
