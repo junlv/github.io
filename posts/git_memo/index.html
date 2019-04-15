@@ -34,7 +34,19 @@
 <ul>
 <li><a href="#标签">标签</a>
 <ul>
-<li><a href="#列出已有的标签-git-tag">列出已有的标签 git tag</a></li>
+<li><a href="#列出已有的标签">列出已有的标签</a></li>
+<li><a href="#模糊查询-tag">模糊查询 tag</a></li>
+<li><a href="#附注标签">附注标签</a></li>
+<li><a href="#显示指定标签的信息">显示指定标签的信息</a></li>
+<li><a href="#过去的提交打标签">过去的提交打标签</a></li>
+<li><a href="#推送标签到远程">推送标签到远程</a></li>
+<li><a href="#删除本地标签">删除本地标签</a></li>
+<li><a href="#删除远程标签">删除远程标签</a></li>
+<li><a href="#在特定地标签上创建一个新分支">在特定地标签上创建一个新分支</a></li>
+</ul></li>
+<li><a href="#历史">历史</a>
+<ul>
+<li><a href="#查看提交历史">查看提交历史</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -86,7 +98,48 @@
 
 <h2 id="标签">标签</h2>
 
-<h3 id="列出已有的标签-git-tag">列出已有的标签 git tag</h3>
+<h3 id="列出已有的标签">列出已有的标签</h3>
+
+<p>git tag</p>
+
+<h3 id="模糊查询-tag">模糊查询 tag</h3>
+
+<p>git tag -l &lsquo;v0.0.0*&lsquo;</p>
+
+<h3 id="附注标签">附注标签</h3>
+
+<p>git tag -a v0.0 -m &lsquo;my version 1.4&rsquo;</p>
+
+<h3 id="显示指定标签的信息">显示指定标签的信息</h3>
+
+<p>git show xxx</p>
+
+<h3 id="过去的提交打标签">过去的提交打标签</h3>
+
+<p>git tag -a v1.2 9fceb02 // 末尾指定提交的校验和（或部分校验和)</p>
+
+<h3 id="推送标签到远程">推送标签到远程</h3>
+
+<p>git push origin v1.0.0 // 单个
+git push origin &ndash;tags // 所有本地</p>
+
+<h3 id="删除本地标签">删除本地标签</h3>
+
+<p>git tag -d v1.4-lw</p>
+
+<h3 id="删除远程标签">删除远程标签</h3>
+
+<p>git push origin :refs/tags/v1.4-lw</p>
+
+<h3 id="在特定地标签上创建一个新分支">在特定地标签上创建一个新分支</h3>
+
+<p>git checkout -b version1 v1.0.0</p>
+
+<h2 id="历史">历史</h2>
+
+<h3 id="查看提交历史">查看提交历史</h3>
+
+<p>git log &ndash;pretty=oneline</p>
 
   </div>
 </div>

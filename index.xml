@@ -92,7 +92,16 @@ unmonitorevent ($(selector)):这将停止监视和打印控制台中的事件。
       <pubDate>Tue, 10 Apr 2018 09:33:00 +0000</pubDate>
       
       <guid>https://www.at719.com/posts/git_memo/</guid>
-      <description> 标签 列出已有的标签 git tag </description>
+      <description>标签 列出已有的标签 git tag
+模糊查询 tag git tag -l &amp;lsquo;v0.0.0*&amp;lsquo;
+附注标签 git tag -a v0.0 -m &amp;lsquo;my version 1.4&amp;rsquo;
+显示指定标签的信息 git show xxx
+过去的提交打标签 git tag -a v1.2 9fceb02 // 末尾指定提交的校验和（或部分校验和)
+推送标签到远程 git push origin v1.0.0 // 单个 git push origin &amp;ndash;tags // 所有本地
+删除本地标签 git tag -d v1.4-lw
+删除远程标签 git push origin :refs/tags/v1.4-lw
+在特定地标签上创建一个新分支 git checkout -b version1 v1.0.0
+历史 查看提交历史 git log &amp;ndash;pretty=oneline</description>
     </item>
     
   </channel>
