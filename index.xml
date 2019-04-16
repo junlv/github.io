@@ -30,7 +30,12 @@ var a = [1,2,3] console.log(a.forEach(function(item) { console.log(item)})) // �
       <pubDate>Wed, 10 Apr 2019 09:33:00 +0000</pubDate>
       
       <guid>https://www.at719.com/posts/golang_memo/</guid>
-      <description> 数组 声明数组 var arr [3]string  初始化数组 var arr= [3]string{&amp;quot;i&amp;quot;，&amp;quot;love&amp;quot;,&amp;quot;you&amp;quot;} 或者 var arr= [...]string{&amp;quot;i&amp;quot;，&amp;quot;love&amp;quot;,&amp;quot;you&amp;quot;}  遍历数组 var arr= [...]string{&amp;quot;i&amp;quot;，&amp;quot;love&amp;quot;,&amp;quot;you&amp;quot;} for k,v := range arr { }  切片 </description>
+      <description>数组 声明数组 var arr [3]string  初始化数组 var arr= [3]string{&amp;quot;i&amp;quot;，&amp;quot;love&amp;quot;,&amp;quot;you&amp;quot;} 或者 var arr= [...]string{&amp;quot;i&amp;quot;，&amp;quot;love&amp;quot;,&amp;quot;you&amp;quot;}  遍历数组 var arr= [...]string{&amp;quot;i&amp;quot;，&amp;quot;love&amp;quot;,&amp;quot;you&amp;quot;} for k,v := range arr { }  切片 结构体 不同结构体变量的字段是独立，互不影响，一个结构体变量字段的更改，不影响另外一个, 结构体是值类型
+Golang 继承是通过匿名字段来实现。Golang 面向对象(OOP)很优雅，OOP 本身就是语言类型系统(typesystem)的一部分，通过接口 (interface)关联，耦合性低，也非常灵活。
+ 继承  在 Golang 中，如果一个 struct 嵌套了另一个匿名结构体，那么这个结构体可以直接访 问匿名结构体的字段和方法，从而实现了继承特性。一般在 golang 中不叫继承而叫组合
+-
+当我们嵌入一个类型，这个类型的方法就变成了外部类型的方法，但是当它被调用时，方法的接受者是内部类型(嵌入类型)，而非外部类型。— Effective Go
+匿名字段 type Person struct { Name string Age int } func (person *Person) info() string { return fmt.Sprintf(&amp;quot;%s age is %d&amp;quot;, person.</description>
     </item>
     
     <item>

@@ -39,6 +39,10 @@
 <li><a href="#遍历数组">遍历数组</a></li>
 </ul></li>
 <li><a href="#切片">切片</a></li>
+<li><a href="#结构体">结构体</a>
+<ul>
+<li><a href="#匿名字段">匿名字段</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -111,6 +115,70 @@ for k,v := range arr {
 </code></pre>
 
 <h2 id="切片">切片</h2>
+
+<h2 id="结构体">结构体</h2>
+
+<p>不同结构体变量的字段是独立，互不影响，一个结构体变量字段的更改，不影响另外一个, 结构体是值类型</p>
+
+<p>Golang 继承是通过匿名字段来实现。Golang 面向对象(OOP)很优雅，OOP 本身就是语言类型系统(typesystem)的一部分，通过接口 (interface)关联，耦合性低，也非常灵活。</p>
+
+<ul>
+<li>继承</li>
+</ul>
+
+<p>在 Golang 中，如果一个 struct 嵌套了另一个匿名结构体，那么这个结构体可以直接访 问匿名结构体的字段和方法，从而实现了继承特性。一般在 golang 中不叫继承而叫组合</p>
+
+<p>-</p>
+
+<p>当我们嵌入一个类型，这个类型的方法就变成了外部类型的方法，但是当它被调用时，方法的接受者是内部类型(嵌入类型)，而非外部类型。— Effective Go</p>
+
+<h3 id="匿名字段">匿名字段</h3>
+
+<pre><code class="language-golang">
+type Person struct {
+	Name string
+	Age  int
+}
+
+func (person *Person) info() string {
+	return fmt.Sprintf(&quot;%s  age is %d&quot;, person.Name, person.Age)
+}
+
+func (person Person) feature() string {
+	return fmt.Sprintf(&quot;%s can walk can talk &quot;, person.Name)
+}
+
+type Student struct {
+	*Person
+	Score int
+}
+
+func (person Person) skill() string {
+	return fmt.Sprintf(&quot;%s can walk can talk &quot;, person.Name)
+}
+
+func main() {
+
+	human1 := &amp;Person{
+		Name: &quot;tom&quot;,
+		Age:  18,
+	}
+	fmt.Println(human1.info())
+	fmt.Println(human1.feature())
+
+	human2 := &amp;Student{
+		Person: &amp;Person{
+			Name: &quot;lisa&quot;,
+			Age:  17,
+		},
+		Score: 100,
+	}
+	fmt.Println(human2.info())
+	fmt.Println(human2.feature())
+}
+
+
+</code></pre>
 
   </div>
 </div>
