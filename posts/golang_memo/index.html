@@ -128,13 +128,13 @@ for k,v := range arr {
 
 <p>在 Golang 中，如果一个 struct 嵌套了另一个匿名结构体，那么这个结构体可以直接访 问匿名结构体的字段和方法，从而实现了继承特性。一般在 golang 中不叫继承而叫组合</p>
 
-<p>-</p>
-
+<blockquote>
 <p>当我们嵌入一个类型，这个类型的方法就变成了外部类型的方法，但是当它被调用时，方法的接受者是内部类型(嵌入类型)，而非外部类型。— Effective Go</p>
+</blockquote>
 
 <h3 id="匿名字段">匿名字段</h3>
 
-<pre><code class="language-golang">
+<pre><code class="language-Go">
 type Person struct {
 	Name string
 	Age  int
