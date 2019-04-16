@@ -43,6 +43,13 @@
 <ul>
 <li><a href="#匿名字段">匿名字段</a></li>
 </ul></li>
+<li><a href="#channel">channel</a>
+<ul>
+<li><a href="#创建管道">创建管道</a></li>
+<li><a href="#向管道写入数据">向管道写入数据</a></li>
+<li><a href="#从管道中读取数据">从管道中读取数据</a></li>
+<li><a href="#缓冲通道">缓冲通道</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -177,6 +184,61 @@ func main() {
 	fmt.Println(human2.feature())
 }
 </code></pre>
+
+<h2 id="channel">channel</h2>
+
+<ol>
+<li><p>channle 本质就是一个数据结构-队列【FIFO : first in first out】</p></li>
+
+<li><p>c 多 goroutine 访问 hannle 时，不需要加锁, channel 本身就是线程安全</p></li>
+
+<li><p>channel 有类型的，一个 string 的 channel 只能存放 string 类型数据。</p></li>
+
+<li><p>channel 是引用类型,必须初始化才能写入数据, 即 make 后才能使用</p></li>
+
+<li><p>channle 的数据放满后，就不能再放入了</p></li>
+
+<li><p>使用内置函数 close 可以关闭 channel, 当 channel 关闭后，就不能再向 channel 写数据了，但是仍然 可以从该 channel 读取数据</p></li>
+</ol>
+
+<h3 id="创建管道">创建管道</h3>
+
+<pre><code class="language-Go">var intChan chan int
+intChan = make(chan int, 3)
+
+// 声明只写
+var chan2 chan&lt;- int
+chan2 = make(chan int, 3)
+chan2&lt;-1
+
+// 声明只读
+var chan3 &lt;-chan int
+chan3 = make(chan int, 3)
+num2 := &lt;-chan3
+</code></pre>
+
+<h3 id="向管道写入数据">向管道写入数据</h3>
+
+<p>intChan&lt;- 10</p>
+
+<h3 id="从管道中读取数据">从管道中读取数据</h3>
+
+<p>var num2 int
+num2 = &lt;-intChan</p>
+
+<h3 id="缓冲通道">缓冲通道</h3>
+
+<p>Happens before
+1 发送操作会使通道复制被发送的元素。若因通道的缓冲空间已满而无法立即复制，
+则阻塞进行发送操作的 goroutine。复制的目的地址有两种。
+当通道已空且有接收方在等待元素值时，它会是最早等待的那个接收方持有的内存地址，否则会是
+通道持有的缓冲中的内存地址。</p>
+
+<p>2 接收操作会使通道给出一个已发给它的元素值的副本，若因通道的缓冲空间已空而无法立即给出
+，则阻塞进行接收操作的 goroutine。一般情况下，接收方会从通道持有的缓冲中得到元素值。</p>
+
+<p>3 对于同一个元素值来说，把它发送给某个通道的操作，一定会在从该通道接收它的操作完成之前完成。换句话
+说。在通道完全复制一个元素之前，任何 goroutine 都不可能从它那里接收到这个元素的副本。</p>
 
   </div>
 </div>
