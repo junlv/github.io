@@ -101,13 +101,13 @@ unmonitorevent ($(selector)):这将停止监视和打印控制台中的事件。
 附注标签 git tag -a  -m &amp;lsquo;comment&amp;rsquo;
 显示指定标签的信息 git show 
 过去的提交打标签 git tag -a v1.2 9fceb02 // 末尾指定提交的校验和（或部分校验和)
-推送标签到远程 git push origin  // 单个 git push origin &amp;ndash;tags // 所有本地
-删除本地标签 git tag -d 
-删除远程标签 git push origin :refs/tags/
-根据特定标签创建新分支 git checkout -b  
+推送标签到远程 git push origin &amp;lt;tagName&amp;gt; // 单个 git push origin &amp;ndash;tags // 所有本地
+删除本地标签 git tag -d &amp;lt;tagName&amp;gt;
+删除远程标签 git push origin :refs/tags/&amp;lt;tagName&amp;gt;
+根据特定标签创建新分支 git checkout -b &amp;lt;branchName&amp;gt; &amp;lt;tagName&amp;gt;
 历史 查看提交历史 git log &amp;ndash;pretty=oneline
 分支 分支创建 git branch testing
-删除远程分支 git push origin &amp;ndash;delete</description>
+删除远程分支 git push origin &amp;ndash;delete &amp;lt;branchName&amp;gt;</description>
     </item>
     
   </channel>
