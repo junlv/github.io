@@ -42,7 +42,7 @@
 <li><a href="#推送标签到远程">推送标签到远程</a></li>
 <li><a href="#删除本地标签">删除本地标签</a></li>
 <li><a href="#删除远程标签">删除远程标签</a></li>
-<li><a href="#在特定地标签上创建一个新分支">在特定地标签上创建一个新分支</a></li>
+<li><a href="#根据特定标签创建新分支">根据特定标签创建新分支</a></li>
 </ul></li>
 <li><a href="#历史">历史</a>
 <ul>
@@ -111,15 +111,15 @@
 
 <h3 id="模糊查询-tag">模糊查询 tag</h3>
 
-<p>git tag -l &lsquo;v0.0.0*&lsquo;</p>
+<p>git tag -l &lsquo;tagName*&lsquo;</p>
 
 <h3 id="附注标签">附注标签</h3>
 
-<p>git tag -a v0.0 -m &lsquo;my version 1.4&rsquo;</p>
+<p>git tag -a <tagName> -m &lsquo;comment&rsquo;</p>
 
 <h3 id="显示指定标签的信息">显示指定标签的信息</h3>
 
-<p>git show xxx</p>
+<p>git show <tagName></p>
 
 <h3 id="过去的提交打标签">过去的提交打标签</h3>
 
@@ -127,20 +127,20 @@
 
 <h3 id="推送标签到远程">推送标签到远程</h3>
 
-<p>git push origin v1.0.0 // 单个
+<p>git push origin <tagName> // 单个
 git push origin &ndash;tags // 所有本地</p>
 
 <h3 id="删除本地标签">删除本地标签</h3>
 
-<p>git tag -d v1.4-lw</p>
+<p>git tag -d <tagName></p>
 
 <h3 id="删除远程标签">删除远程标签</h3>
 
-<p>git push origin :refs/tags/v1.4-lw</p>
+<p>git push origin :refs/tags/<tagName></p>
 
-<h3 id="在特定地标签上创建一个新分支">在特定地标签上创建一个新分支</h3>
+<h3 id="根据特定标签创建新分支">根据特定标签创建新分支</h3>
 
-<p>git checkout -b version1 v1.0.0</p>
+<p>git checkout -b <branchName> <tagName></p>
 
 <h2 id="历史">历史</h2>
 
@@ -160,7 +160,7 @@ git push origin &ndash;tags // 所有本地</p>
 
 <h3 id="合并分支">合并分支</h3>
 
-<p>git merge &ndash;no-ff -m &ldquo;comment&rdquo; hotfix1.3.2</p>
+<p>git merge &ndash;no-ff -m &ldquo;comment&rdquo; <branchName></p>
 
 <h3 id="更新远程分支列表">更新远程分支列表</h3>
 
