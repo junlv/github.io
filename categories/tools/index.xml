@@ -20,8 +20,8 @@
       <guid>https://www.at719.com/posts/git_memo/</guid>
       <description>标签 列出已有的标签 git tag
 模糊查询 tag git tag -l &amp;lsquo;tagName*&amp;lsquo;
-附注标签 git tag -a  -m &amp;lsquo;comment&amp;rsquo;
-显示指定标签的信息 git show 
+附注标签 git tag -a &amp;lt;tagName&amp;gt; -m &amp;lsquo;comment&amp;rsquo;
+显示指定标签的信息 git show &amp;lt;tagName&amp;gt;
 过去的提交打标签 git tag -a v1.2 9fceb02 // 末尾指定提交的校验和（或部分校验和)
 推送标签到远程 git push origin &amp;lt;tagName&amp;gt; // 单个 git push origin &amp;ndash;tags // 所有本地
 删除本地标签 git tag -d &amp;lt;tagName&amp;gt;
