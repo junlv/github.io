@@ -261,15 +261,48 @@ num2 = &lt;-intChan</p>
 
 <h3 id="make">make</h3>
 
+<p>make函数用于内存分配,它用于通道chan、映射map以及切片slice的内存创建初始化（非零值）.
+返回的类型就是这三个类型本身，而不是他们的指针类型.这三种类型本身就是引用类型</p>
+
+<p>//创建一个初始元素长度为5的数组切片，元素初始值为0：
+mySlice1 := make([]int, 5)</p>
+
 <h3 id="len">len</h3>
+
+<p>其作用是用于计算数组(包括数组指针)、切片(slice)、map、channel、字符串等数据类型的长度，注意，结构休(struct)、整型布尔等不能作为参数传给len函数。</p>
+
+<p>数组或数组指针：返回元素个数
+map和slice: 元素个数
+channel:通道中未读的元素个数
+字符串：字节数，并非字符串的字符数
+当V的值为nil值，len返回0</p>
 
 <h3 id="cap">cap</h3>
 
+<p>cap()函数返回的是数组切片分配的空间大小
+mySlice := make([]int, 5, 10)
+len(mySlice): 5
+cap(mySlice): 10</p>
+
 <h3 id="append">append</h3>
+
+<p>append主要用于给某个切片（slice）追加元素</p>
 
 <h3 id="copy">copy</h3>
 
+<p>函数主要是切片（slice）的拷贝，不支持数组
+将第二个slice里的元素拷贝到第一个slice里，拷贝的长度为两个slice中长度较小的长度值</p>
+
+<p>s := []int{1,2,3}
+fmt.Println(s) //[1 2 3]
+copy(s,[]int{4,5,6,7,8,9})
+fmt.Println(s) //[4 5 6]</p>
+
 <h3 id="delete">delete</h3>
+
+<p>按照指定的键将元素从映射中删除。若 m 为 nil 或无此元素，delete 不进行操作。
+函数结构：
+delete(map1, &ldquo;two&rdquo;)</p>
 
 <h3 id="panic">panic</h3>
 
@@ -277,7 +310,11 @@ num2 = &lt;-intChan</p>
 
 <h3 id="close">close</h3>
 
+<p>close函数是用于关闭通道的。</p>
+
 <h3 id="complex">complex</h3>
+
+<p>Go提供了两种大小的复数类型：complex64和complex128</p>
 
 <h3 id="real">real</h3>
 
@@ -285,7 +322,11 @@ num2 = &lt;-intChan</p>
 
 <h3 id="print">Print</h3>
 
+<p>底层打印函数，在部署环境中建议使用 fmt 包</p>
+
 <h3 id="printin">Printin</h3>
+
+<p>底层打印函数，在部署环境中建议使用 fmt 包</p>
 
   </div>
 </div>
