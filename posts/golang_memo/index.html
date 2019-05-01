@@ -32,6 +32,10 @@
 <ul>
 <li>
 <ul>
+<li><a href="#类型">类型</a>
+<ul>
+<li><a href="#rune">rune</a></li>
+</ul></li>
 <li><a href="#数组">数组</a>
 <ul>
 <li><a href="#声明数组">声明数组</a></li>
@@ -114,6 +118,15 @@
   <h1 class="subtitle is-size-4-mobile is-size-3-desktop">Golang杂物柜</h1>
   <div class="content">
     
+
+<h2 id="类型">类型</h2>
+
+<h3 id="rune">rune</h3>
+
+<p>byte 等同于 int8，常用来处理 ascii 字符
+rune 等同于 int32,常用来处理 unicode 或 utf-8 字符
+golang 中中文字符在 unicode 下占 2 个字节，在 utf-8 编码下占 3 个字节，而 golang 默认编码正好是 utf-8。
+len(&ldquo;中国&rdquo;) &ndash;&gt; 6</p>
 
 <h2 id="数组">数组</h2>
 
@@ -261,21 +274,21 @@ num2 = &lt;-intChan</p>
 
 <h3 id="make">make</h3>
 
-<p>make函数用于内存分配,它用于通道chan、映射map以及切片slice的内存创建初始化（非零值）.
+<p>make 函数用于内存分配,它用于通道 chan、映射 map 以及切片 slice 的内存创建初始化（非零值）.
 返回的类型就是这三个类型本身，而不是他们的指针类型.这三种类型本身就是引用类型</p>
 
-<p>//创建一个初始元素长度为5的数组切片，元素初始值为0：
+<p>//创建一个初始元素长度为 5 的数组切片，元素初始值为 0：
 mySlice1 := make([]int, 5)</p>
 
 <h3 id="len">len</h3>
 
-<p>其作用是用于计算数组(包括数组指针)、切片(slice)、map、channel、字符串等数据类型的长度，注意，结构休(struct)、整型布尔等不能作为参数传给len函数。</p>
+<p>其作用是用于计算数组(包括数组指针)、切片(slice)、map、channel、字符串等数据类型的长度，注意，结构休(struct)、整型布尔等不能作为参数传给 len 函数。</p>
 
 <p>数组或数组指针：返回元素个数
-map和slice: 元素个数
+map 和 slice: 元素个数
 channel:通道中未读的元素个数
 字符串：字节数，并非字符串的字符数
-当V的值为nil值，len返回0</p>
+当 V 的值为 nil 值，len 返回 0</p>
 
 <h3 id="cap">cap</h3>
 
@@ -286,12 +299,12 @@ cap(mySlice): 10</p>
 
 <h3 id="append">append</h3>
 
-<p>append主要用于给某个切片（slice）追加元素</p>
+<p>append 主要用于给某个切片（slice）追加元素</p>
 
 <h3 id="copy">copy</h3>
 
 <p>函数主要是切片（slice）的拷贝，不支持数组
-将第二个slice里的元素拷贝到第一个slice里，拷贝的长度为两个slice中长度较小的长度值</p>
+将第二个 slice 里的元素拷贝到第一个 slice 里，拷贝的长度为两个 slice 中长度较小的长度值</p>
 
 <p>s := []int{1,2,3}
 fmt.Println(s) //[1 2 3]
@@ -310,11 +323,11 @@ delete(map1, &ldquo;two&rdquo;)</p>
 
 <h3 id="close">close</h3>
 
-<p>close函数是用于关闭通道的。</p>
+<p>close 函数是用于关闭通道的。</p>
 
 <h3 id="complex">complex</h3>
 
-<p>Go提供了两种大小的复数类型：complex64和complex128</p>
+<p>Go 提供了两种大小的复数类型：complex64 和 complex128</p>
 
 <h3 id="real">real</h3>
 
