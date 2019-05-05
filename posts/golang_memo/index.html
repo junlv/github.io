@@ -47,6 +47,10 @@
 <ul>
 <li><a href="#匿名字段">匿名字段</a></li>
 </ul></li>
+<li><a href="#go-concurrency-并发">Go Concurrency 并发</a>
+<ul>
+<li><a href="#golang线程实现模型">golang线程实现模型</a></li>
+</ul></li>
 <li><a href="#channel">channel</a>
 <ul>
 <li><a href="#创建管道">创建管道</a></li>
@@ -220,6 +224,18 @@ func main() {
 	fmt.Println(human2.feature())
 }
 </code></pre>
+
+<h2 id="go-concurrency-并发">Go Concurrency 并发</h2>
+
+<p>Golang在处理并发编程中，始终推荐一种理念,不要用共享内容方式来通信。而是以通信的手段来共享内容
+推荐使用channel(通道),channel主要用来在多个goroutine之间传递数据，并且还会保证整个过程的并发
+安全性。</p>
+
+<h3 id="golang线程实现模型">golang线程实现模型</h3>
+
+<p>M：machine的缩写。一个m代表一个内核线程。或一个工作线程
+P：processor的缩写。一个p代表执行一个Go代码片段所需的资源 或者上下文环境
+G：goroutine的缩写。一个G代表一个Go片段。前者是对后者的一种封装。</p>
 
 <h2 id="channel">channel</h2>
 
