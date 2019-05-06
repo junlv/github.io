@@ -49,7 +49,7 @@
 </ul></li>
 <li><a href="#go-concurrency-并发">Go Concurrency 并发</a>
 <ul>
-<li><a href="#golang线程实现模型">golang线程实现模型</a></li>
+<li><a href="#golang线程实现模型-例子参照讲解">golang线程实现模型(例子参照讲解)</a></li>
 </ul></li>
 <li><a href="#channel">channel</a>
 <ul>
@@ -231,16 +231,20 @@ func main() {
 推荐使用channel(通道),channel主要用来在多个goroutine之间传递数据，并且还会保证整个过程的并发
 安全性。</p>
 
-<h3 id="golang线程实现模型">golang线程实现模型</h3>
+<h3 id="golang线程实现模型-例子参照讲解">golang线程实现模型(例子参照讲解)</h3>
 
 <p>M：machine的缩写。一个m代表一个内核线程。或一个工作线程
 P：processor的缩写。一个p代表执行一个Go代码片段所需的资源 或者上下文环境
 G：goroutine的缩写。一个G代表一个Go片段。前者是对后者的一种封装。</p>
 
+<p>一个G的执行。需要M和P的支持，一个M和一个P关联之后，就形成了一个有效的
+G执行环境，每个P都包含一个可运行的G的队列(quene),通过P，队列中的G被传递
+给M并获取运行时间</p>
+
 <h2 id="channel">channel</h2>
 
 <ol>
-<li><p>channle 本质就是一个数据结构-队列【FIFO : first in first out】</p></li>
+<li><p>channle 本质就是一个数据结构-队列【FIFO : first in first out】 先进先出</p></li>
 
 <li><p>c 多 goroutine 访问 hannle 时，不需要加锁, channel 本身就是线程安全</p></li>
 
