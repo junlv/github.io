@@ -45,7 +45,14 @@ Ctrl + Shift + PageUp：标签页左移</description>
       <pubDate>Wed, 01 May 2019 09:33:00 +0000</pubDate>
       
       <guid>https://www.at719.com/posts/vim/</guid>
-      <description> 常用快捷键 桌面常用快捷键 常见终端快捷键 </description>
+      <description>常用工具 ctrlsf.vim 快速全局搜索关键字 t - 在新tab打开选中文件
+p - 预览
+P - Like Enter but open file in a preview window and switch focus to it.
+O - Like Enter but always leave CtrlSF window opening.
+T - Like t but focus CtrlSF window instead of new opened tab.
+M - Switch result window between normal view and compact view.
+q - 关闭搜索窗口
+ - Move cursor to next match.下一个选中</description>
     </item>
     
     <item>
