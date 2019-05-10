@@ -39,5 +39,14 @@ Ctrl + Shift + Q：关闭终端窗口
 Ctrl + Shift + PageUp：标签页左移</description>
     </item>
     
+    <item>
+      <title>VIM</title>
+      <link>https://www.at719.com/posts/vim/</link>
+      <pubDate>Wed, 01 May 2019 09:33:00 +0000</pubDate>
+      
+      <guid>https://www.at719.com/posts/vim/</guid>
+      <description> 常用快捷键 桌面常用快捷键 常见终端快捷键 </description>
+    </item>
+    
   </channel>
 </rss>
