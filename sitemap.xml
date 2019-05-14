@@ -63,13 +63,13 @@
   </url>
   
   <url>
-    <loc>https://www.at719.com/categories/golang/</loc>
+    <loc>https://www.at719.com/tags/golang/</loc>
     <lastmod>2019-04-10T09:33:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.at719.com/tags/golang/</loc>
+    <loc>https://www.at719.com/categories/golang/</loc>
     <lastmod>2019-04-10T09:33:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -81,13 +81,13 @@
   </url>
   
   <url>
-    <loc>https://www.at719.com/categories/linux/</loc>
+    <loc>https://www.at719.com/tags/linux/</loc>
     <lastmod>2019-05-01T09:33:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.at719.com/tags/linux/</loc>
+    <loc>https://www.at719.com/categories/linux/</loc>
     <lastmod>2019-05-01T09:33:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -117,13 +117,13 @@
   </url>
   
   <url>
-    <loc>https://www.at719.com/categories/tools/</loc>
+    <loc>https://www.at719.com/tags/tools/</loc>
     <lastmod>2018-04-10T09:33:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.at719.com/tags/tools/</loc>
+    <loc>https://www.at719.com/categories/tools/</loc>
     <lastmod>2018-04-10T09:33:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -135,13 +135,13 @@
   </url>
   
   <url>
-    <loc>https://www.at719.com/categories/vim/</loc>
+    <loc>https://www.at719.com/tags/vim/</loc>
     <lastmod>2019-05-01T09:33:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.at719.com/tags/vim/</loc>
+    <loc>https://www.at719.com/categories/vim/</loc>
     <lastmod>2019-05-01T09:33:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -153,25 +153,25 @@
   </url>
   
   <url>
-    <loc>https://www.at719.com/categories/web/</loc>
-    <lastmod>2019-04-11T09:33:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://www.at719.com/tags/web/</loc>
     <lastmod>2019-04-11T09:33:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.at719.com/categories/%E5%BF%AB%E6%8D%B7%E9%94%AE/</loc>
-    <lastmod>2019-05-12T20:33:00+00:00</lastmod>
+    <loc>https://www.at719.com/categories/web/</loc>
+    <lastmod>2019-04-11T09:33:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.at719.com/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/</loc>
+    <lastmod>2019-05-12T20:33:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.at719.com/categories/%E5%BF%AB%E6%8D%B7%E9%94%AE/</loc>
     <lastmod>2019-05-12T20:33:00+00:00</lastmod>
     <priority>0</priority>
   </url>
