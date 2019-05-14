@@ -7,10 +7,43 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://www.at719.com&#34;&gt;at719&lt;/a&gt; 2018</copyright>
-    <lastBuildDate>Wed, 01 May 2019 09:33:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 May 2019 09:33:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.at719.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>mac系统下快捷键</title>
+      <link>https://www.at719.com/posts/mac_shortcuts/</link>
+      <pubDate>Mon, 13 May 2019 09:33:00 +0000</pubDate>
+      
+      <guid>https://www.at719.com/posts/mac_shortcuts/</guid>
+      <description>##跳转快捷键
+文本位置跳转快捷键 跳转到一行的开头：Command+左箭头
+跳转到一行的末尾：Command+右箭头
+跳转到当前单词的开头(适合英文、拼音)：Option+左箭头
+跳转到当前单词的末尾(适合英文、拼音)：Option+右箭头
+跳转到全部文本的开头：Command+上箭头
+跳转到全部文本的末尾：Command+下箭头
+在以上快捷键中加入Shift，则可以扩展成为选中文本效果的快捷键：
+选中光标到本行开头的文本：Shift+Command+左箭头
+选中光标到本行末尾的文本：Shift+Command+右箭头
+选中光标到当前单词的开头(适合英文、拼音)：Shift+Option+左箭头
+选中光标到当前单词的末尾(适合英文、拼音)：Shift+Option+右箭头
+选中光标到全部文本的开头：Shift+Command+上箭头
+选中光标到全部文本的末尾：Shift+Command+下箭头
+OS X 文本编辑常用快捷键 移动光标快捷键 Control-F 光标前进一个字符，相当于右键（F = Forward）
+Control-B 光标后退一个字符，相当于左键（B = Backward）
+Control-P 上移一行，相当于上键（P = Previous）
+Control-N 下移一行，相当于下键（N = Next）
+Control-A 移动到一行的开头（A = Ahead）
+Control-E 移动到一行的结尾（E = End）
+文字删除快捷键 Control-H 删除光标前面的字符
+Control-D 删除光标后面的字符
+Control-K 删除从光标开始，到一行结尾的所有字符
+文字选择快捷键 Control-Shift-A 选中从光标开始，到一行开头的所有文字
+Control-Shift-E 选中从光标开始，到一行结尾的所有文字</description>
+    </item>
     
     <item>
       <title>Ubuntu使用</title>
