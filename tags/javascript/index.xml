@@ -13,12 +13,13 @@
     
     
     <item>
-      <title>记一次原型链翻车</title>
+      <title>记一次原型链错误使用</title>
       <link>https://www.at719.com/posts/javascript_article1/</link>
       <pubDate>Mon, 20 May 2019 09:33:00 +0000</pubDate>
       
       <guid>https://www.at719.com/posts/javascript_article1/</guid>
-      <description>有关原型链的知识点看过好多文章了,自认为还是很熟一次码代码中不小心就翻车了</description>
+      <description>有关原型链的知识点看过好多文章了,自认为还是很熟一次码代码中不小心就翻车了
+先看一段代码</description>
     </item>
     
   </channel>
