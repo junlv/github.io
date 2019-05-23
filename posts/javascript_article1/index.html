@@ -78,6 +78,102 @@
 
 <p>先看一段代码</p>
 
+<p>var SuperClass = function() {}</p>
+
+<p>SuperClass.prototype.name = 1</p>
+
+<p>SuperClass.prototype.names = []</p>
+
+<p>var SubClass =  function(){}</p>
+
+<p>SubClass.prototype = new SuperClass()
+SubClass.prototype.constructor = SubClass</p>
+
+<p>var a = new SubClass()
+var b = new SubClass()</p>
+
+<p>我们打印
+console.log(a.name)
+console.log(b.name)</p>
+
+<p>输出结果是
+1
+1</p>
+
+<p>我们都知道 当实例上的属性不存在的时候 根据原型链原理，会往它的原型链上找
+所以name 就是 SuperClass.prototype.name</p>
+
+<p>如果我们对当前这个实例进行赋值
+a.name = 2
+这时候
+console.log(a.name)
+console.log(b.name)
+会输出什么呢？</p>
+
+<p>输出结果是
+2
+1</p>
+
+<p>因为
+a.name = 2 会对a实例赋一个name属性 值为2
+同时对外会遮住原型链上的属性</p>
+
+<p>所以a.name输出2</p>
+
+<p>a.name = 2
+如果delete a.name
+输出结果是
+1
+1</p>
+
+<p>我们再来加一个属性</p>
+
+<p>var SuperClass = function() {}</p>
+
+<p>SuperClass.prototype.name = 1</p>
+
+<p>SuperClass.prototype.names = []</p>
+
+<p>var SubClass =  function(){}</p>
+
+<p>SubClass.prototype = new SuperClass()
+SubClass.prototype.constructor = SubClass</p>
+
+<p>var a = new SubClass()
+var b = new SubClass()</p>
+
+<p>console.log(a.names)
+console.log(b.names)
+我们输出
+[]
+[]</p>
+
+<p>我们再修改一下
+a.names.push(2)
+console.log(a.names)
+console.log(b.names)</p>
+
+<p>输出结果
+[2]
+[2]</p>
+
+<p>因为对应a和b实例来说
+它们应用names都是原型链上同一个names属性</p>
+
+<p>SuperClass.prototype.names = null</p>
+
+<p>然后分部</p>
+
+<p>a.names =  []
+b.names =  [1]</p>
+
+<p>console.log(a.names)
+console.log(b.names)</p>
+
+<p>输出结果
+[]
+[1]</p>
+
   </div>
 </div>
 

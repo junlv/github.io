@@ -19,7 +19,21 @@
       
       <guid>https://www.at719.com/posts/javascript_article1/</guid>
       <description>有关原型链的知识点看过好多文章了,自认为还是很熟一次码代码中不小心就翻车了
-先看一段代码</description>
+先看一段代码
+var SuperClass = function() {}
+SuperClass.prototype.name = 1
+SuperClass.prototype.names = []
+var SubClass = function(){}
+SubClass.prototype = new SuperClass() SubClass.prototype.constructor = SubClass
+var a = new SubClass() var b = new SubClass()
+我们打印 console.log(a.name) console.log(b.name)
+输出结果是 1 1
+我们都知道 当实例上的属性不存在的时候 根据原型链原理，会往它的原型链上找 所以name 就是 SuperClass.prototype.name
+如果我们对当前这个实例进行赋值 a.name = 2 这时候 console.log(a.name) console.log(b.name) 会输出什么呢？
+输出结果是 2 1
+因为 a.name = 2 会对a实例赋一个name属性 值为2 同时对外会遮住原型链上的属性
+所以a.name输出2
+a.name = 2 如果delete a.name 输出结果是 1 1</description>
     </item>
     
     <item>
