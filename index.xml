@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://www.at719.com&#34;&gt;at719&lt;/a&gt; 2018</copyright>
-    <lastBuildDate>Sun, 12 May 2019 20:33:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 May 2019 09:33:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.at719.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>记一次原型链翻车</title>
+      <link>https://www.at719.com/posts/javascript_article1/</link>
+      <pubDate>Mon, 20 May 2019 09:33:00 +0000</pubDate>
+      
+      <guid>https://www.at719.com/posts/javascript_article1/</guid>
+      <description>有关原型链的知识点看过好多文章了,自认为还是很熟一次码代码中不小心就翻车了</description>
+    </item>
     
     <item>
       <title>mac系统下快捷键</title>
