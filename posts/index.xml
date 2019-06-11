@@ -97,7 +97,18 @@ Ctrl + Shift + PageUp：标签页左移</description>
     </item>
     
     <item>
-      <title>VIM</title>
+      <title>japanese-n4</title>
+      <link>https://www.at719.com/posts/japanese/</link>
+      <pubDate>Wed, 01 May 2019 09:33:00 +0000</pubDate>
+      
+      <guid>https://www.at719.com/posts/japanese/</guid>
+      <description> 語彙 警けい官かん  警官，公安人员 警けい官かん を呼ぶ/ 找警察
+警官を現場に派遣する/ 派警察到现场
+ </description>
+    </item>
+    
+    <item>
+      <title>自用vim常用配置</title>
       <link>https://www.at719.com/posts/vim/</link>
       <pubDate>Wed, 01 May 2019 09:33:00 +0000</pubDate>
       
@@ -110,17 +121,6 @@ T - Like t but focus CtrlSF window instead of new opened tab.
 M - Switch result window between normal view and compact view.
 q - 关闭搜索窗口
  - Move cursor to next match.下一个选中</description>
-    </item>
-    
-    <item>
-      <title>japanese-n4</title>
-      <link>https://www.at719.com/posts/japanese/</link>
-      <pubDate>Wed, 01 May 2019 09:33:00 +0000</pubDate>
-      
-      <guid>https://www.at719.com/posts/japanese/</guid>
-      <description> 語彙 警けい官かん  警官，公安人员 警けい官かん を呼ぶ/ 找警察
-警官を現場に派遣する/ 派警察到现场
- </description>
     </item>
     
     <item>

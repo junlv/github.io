@@ -7,7 +7,7 @@
 
 
 
-<title>VIM | 自在生活</title>
+<title>自用vim常用配置 | 自在生活</title>
 
 <link rel="stylesheet" href="https://www.at719.com/css/styles.css">
 
@@ -35,6 +35,9 @@
 <li><a href="#常用工具">常用工具</a>
 <ul>
 <li><a href="#ctrlsf-vim-快速全局搜索关键字">ctrlsf.vim 快速全局搜索关键字</a></li>
+</ul></li>
+<li><a href="#nerdtree">nerdtree</a>
+<ul>
 <li><a href="#常见终端快捷键">常见终端快捷键</a></li>
 </ul></li>
 </ul></li>
@@ -83,7 +86,7 @@
       
     
   </h2>
-  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">VIM</h1>
+  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">自用vim常用配置</h1>
   <div class="content">
     
 
@@ -110,6 +113,62 @@
 <p><C-K> - Move cursor to previous match.上一个选择</p>
 
 <p><C-C> - Stop a background searching process. 停止搜索</p>
+
+<h2 id="nerdtree">nerdtree</h2>
+
+<p>?: 快速帮助文档</p>
+
+<p>o: 打开一个目录或者打开文件，创建的是buffer，也可以用来打开书签</p>
+
+<p>go: 打开一个文件，但是光标仍然留在NERDTree，创建的是buffer</p>
+
+<p>t: 打开一个文件，创建的是Tab，对书签同样生效</p>
+
+<p>T: 打开一个文件，但是光标仍然留在NERDTree，创建的是Tab，对书签同样生效</p>
+
+<p>i: 水平分割创建文件的窗口，创建的是buffer</p>
+
+<p>gi: 水平分割创建文件的窗口，但是光标仍然留在NERDTree</p>
+
+<p>s: 垂直分割创建文件的窗口，创建的是buffer</p>
+
+<p>gs: 和gi，go类似</p>
+
+<p>x: 收起当前打开的目录</p>
+
+<p>X: 收起所有打开的目录</p>
+
+<p>e: 以文件管理的方式打开选中的目录</p>
+
+<p>D: 删除书签</p>
+
+<p>P: 大写，跳转到当前根路径</p>
+
+<p>p: 小写，跳转到光标所在的上一级路径</p>
+
+<p>K: 跳转到第一个子路径</p>
+
+<p>J: 跳转到最后一个子路径</p>
+
+<p><C-j>和<C-k>: 在同级目录和文件间移动，忽略子目录和子文件</p>
+
+<p>C: 将根路径设置为光标所在的目录</p>
+
+<p>u: 设置上级目录为根路径</p>
+
+<p>U: 设置上级目录为跟路径，但是维持原来目录打开的状态</p>
+
+<p>r: 刷新光标所在的目录</p>
+
+<p>R: 刷新当前根路径</p>
+
+<p>I: 显示或者不显示隐藏文件</p>
+
+<p>f: 打开和关闭文件过滤器</p>
+
+<p>q: 关闭NERDTree</p>
+
+<p>A: 全屏显示NERDTree，或者关闭全屏</p>
 
 <h3 id="常见终端快捷键">常见终端快捷键</h3>
 
