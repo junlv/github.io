@@ -75,7 +75,9 @@ Control-E 移动到一行的结尾（E = End）
 Control-D 删除光标后面的字符
 Control-K 删除从光标开始，到一行结尾的所有字符
 文字选择快捷键 Control-Shift-A 选中从光标开始，到一行开头的所有文字
-Control-Shift-E 选中从光标开始，到一行结尾的所有文字</description>
+Control-Shift-E 选中从光标开始，到一行结尾的所有文字
+VS CODE 常用快捷键 Ctrl + Option + Cmd + o 清除所有
+Ctrl + Option + Cmd + k 设置或取消标签</description>
     </item>
     
     <item>
