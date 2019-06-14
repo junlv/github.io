@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://www.at719.com&#34;&gt;at719&lt;/a&gt; 2018</copyright>
-    <lastBuildDate>Mon, 20 May 2019 09:33:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 05 Jun 2019 22:33:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.at719.com/tags/web/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>vue代码片段</title>
+      <link>https://www.at719.com/posts/vue/</link>
+      <pubDate>Wed, 05 Jun 2019 22:33:00 +0000</pubDate>
+      
+      <guid>https://www.at719.com/posts/vue/</guid>
+      <description> 常用代码片段 v-bind:class &amp;lt;div class=&amp;quot;audio-play&amp;quot;&amp;gt;&amp;lt;span v-on:click=&amp;quot;playAudio&amp;quot; class=&amp;quot;iconfont&amp;quot; v-bind:class=&amp;quot;{ &#39;icon-sy_bf_ks&#39;: isPause, &#39;icon-sy_bf_zt&#39; : !isPause }&amp;quot; &amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;  </description>
+    </item>
     
     <item>
       <title>记一次原型链错误使用</title>
