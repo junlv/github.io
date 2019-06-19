@@ -18,7 +18,7 @@
       <pubDate>Wed, 05 Jun 2019 22:33:00 +0000</pubDate>
       
       <guid>https://www.at719.com/posts/vue/</guid>
-      <description> 常用代码片段 v-bind:class &amp;lt;div class=&amp;quot;audio-play&amp;quot;&amp;gt;&amp;lt;span v-on:click=&amp;quot;playAudio&amp;quot; class=&amp;quot;iconfont&amp;quot; v-bind:class=&amp;quot;{ &#39;icon-sy_bf_ks&#39;: isPause, &#39;icon-sy_bf_zt&#39; : !isPause }&amp;quot; &amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;  </description>
+      <description> 常用代码片段 v-bind:class &amp;lt;div class=&amp;quot;audio-play&amp;quot;&amp;gt;&amp;lt;span v-on:click=&amp;quot;playAudio&amp;quot; class=&amp;quot;iconfont&amp;quot; v-bind:class=&amp;quot;{ &#39;icon-sy_bf_ks&#39;: isPause, &#39;icon-sy_bf_zt&#39; : !isPause }&amp;quot; &amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;  v-bind:style v-bind:style=&amp;quot;{ width: + this.percent + &#39;%&#39; }&amp;quot;  </description>
     </item>
     
     <item>

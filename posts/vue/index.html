@@ -35,6 +35,7 @@
 <li><a href="#常用代码片段">常用代码片段</a>
 <ul>
 <li><a href="#v-bind-class">v-bind:class</a></li>
+<li><a href="#v-bind-style">v-bind:style</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -91,6 +92,11 @@
 <pre><code class="language-html">
   &lt;div class=&quot;audio-play&quot;&gt;&lt;span v-on:click=&quot;playAudio&quot; class=&quot;iconfont&quot; v-bind:class=&quot;{ 'icon-sy_bf_ks': isPause, 'icon-sy_bf_zt' : !isPause }&quot; &gt;&lt;/span&gt;&lt;/div&gt;
 
+</code></pre>
+
+<h3 id="v-bind-style">v-bind:style</h3>
+
+<pre><code class="language-html">  v-bind:style=&quot;{ width:  + this.percent + '%' }&quot;
 </code></pre>
 
   </div>
