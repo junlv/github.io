@@ -44,6 +44,14 @@
 <li><a href="#map">map()：</a></li>
 <li><a href="#some">some()：</a></li>
 </ul></li>
+<li><a href="#计算">计算</a>
+<ul>
+<li><a href="#取整">取整</a></li>
+<li><a href="#向上取整">向上取整</a></li>
+<li><a href="#向下取整">向下取整</a></li>
+<li><a href="#四舍五入">四舍五入</a></li>
+<li><a href="#取余">取余</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -168,6 +176,39 @@ console.log(a.some(function(item) { return item &gt;=4}))
 // 输出
 true
 false
+</code></pre>
+
+<h2 id="计算">计算</h2>
+
+<h3 id="取整">取整</h3>
+
+<pre><code class="language-js">// 丢弃小数部分,保留整数部分
+parseInt(5/2)　　// 2
+</code></pre>
+
+<h3 id="向上取整">向上取整</h3>
+
+<pre><code class="language-js">// 向上取整,有小数就整数部分加1
+Math.ceil(5/2)　　// 3
+
+</code></pre>
+
+<h3 id="向下取整">向下取整</h3>
+
+<pre><code class="language-js">// 向下取整,丢弃小数部分
+Math.floor(5/2)　　// 2
+</code></pre>
+
+<h3 id="四舍五入">四舍五入</h3>
+
+<pre><code class="language-js">// 四舍五入
+Math.round(5/2)　　// 3
+</code></pre>
+
+<h3 id="取余">取余</h3>
+
+<pre><code class="language-js">// 取余
+6%4　　// 2
 </code></pre>
 
   </div>
