@@ -51,10 +51,9 @@ a.name = 2 如果delete a.name 输出结果是 1 1</description>
       <pubDate>Thu, 11 Apr 2019 09:33:00 +0000</pubDate>
       
       <guid>https://www.at719.com/posts/javascript_memo/</guid>
-      <description>Date Date.now()当前unix时间戳(毫秒) var a = Date.now() console.log(a) VM789:2 1555030834615  数组 every()： 对数组中的每一项运行给定函数，如果该函数对每一项都返回true，则返回true。
+      <description>Date Date.now()当前unix时间戳(毫秒) var _now = new Date() _now.getTime() // 获取毫秒 _now.getFullYear() // 年 _now.getMonth() // 0 -- 11个月 _now.getDate() // 日 0 -31 _now.getHours() // 小时 0-13 _now.getMinutes() // 0-59 _now.getSeconds() // 秒  var a = Date.now() console.log(a) VM789:2 1555030834615  数组 every()： 对数组中的每一项运行给定函数，如果该函数对每一项都返回true，则返回true。
 var a = [1,2,3] console.log(a.every(function(item) { return item &amp;gt; 0})) console.log(a.every(function(item) { return item &amp;gt; 1})) // 输出 true false  filter()： 对数组中的每一项运行给定函数，返回该函数会返回true的项组成的数组。
-var a = [1,2,3] console.log(a.filter(function(item) { return item &amp;gt; 0})) console.log(a.filter(function(item) { return item &amp;gt; 1})) // 输出 [1, 2, 3] [2, 3]  forEach()： 对数组中的每一项运行给定函数。这个方法没有返回值。
-var a = [1,2,3] console.log(a.forEach(function(item) { console.log(item)})) // 输出 1 2 3  map()： 对数组中的每一项运行给定函数，返回每次函数调用的结果组成的数组。</description>
+var a = [1,2,3] console.</description>
     </item>
     
     <item>

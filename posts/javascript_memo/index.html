@@ -54,6 +54,7 @@
 </ul></li>
 <li><a href="#引用类型和值类型">引用类型和值类型</a></li>
 <li><a href="#typeof操作符">typeof操作符</a></li>
+<li><a href="#判断变量是否可以当做true-还是false">判断变量是否可以当做true 还是false</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -105,6 +106,23 @@
 <h2 id="date">Date</h2>
 
 <h3 id="date-now-当前unix时间戳-毫秒">Date.now()当前unix时间戳(毫秒)</h3>
+
+<pre><code class="language-js">var _now = new Date()
+_now.getTime() // 获取毫秒
+
+_now.getFullYear() // 年
+
+_now.getMonth() // 0 -- 11个月
+
+_now.getDate() // 日 0 -31
+
+_now.getHours() // 小时 0-13
+
+_now.getMinutes()  // 0-59
+
+_now.getSeconds() // 秒
+
+</code></pre>
 
 <pre><code class="language-js">var a = Date.now()
 console.log(a)
@@ -230,6 +248,11 @@ Math.round(5/2)　　// 3
 <p>　&rdquo;object&rdquo;——如果这个值是对象或null；</p>
 
 <p>　&rdquo;function&rdquo;——如果这个值是函数。</p>
+
+<h2 id="判断变量是否可以当做true-还是false">判断变量是否可以当做true 还是false</h2>
+
+<p>var a = &ldquo;
+if (!!a)</p>
 
   </div>
 </div>
