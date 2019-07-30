@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Design on 自在生活</title>
+    <link>https://www.at719.com/categories/design/</link>
+    <description>Recent content in Design on 自在生活</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://www.at719.com&#34;&gt;at719&lt;/a&gt; 2018</copyright>
+    <lastBuildDate>Sat, 20 Jul 2019 09:33:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.at719.com/categories/design/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Microservice微服务</title>
+      <link>https://www.at719.com/posts/microservice/</link>
+      <pubDate>Sat, 20 Jul 2019 09:33:00 +0000</pubDate>
+      
+      <guid>https://www.at719.com/posts/microservice/</guid>
+      <description> 标签 </description>
+    </item>
+    
+  </channel>
+</rss>
